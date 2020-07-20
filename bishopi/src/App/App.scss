@@ -1,0 +1,66 @@
+header .container {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    .logo {
+        width: 200px;
+        margin-right: auto;
+    }
+    .buttonCon,
+    .ctaCon {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .button {
+            padding: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            color: #29323d;
+        }
+        .cta {
+            background-color: #29323d;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 30px;
+            margin: 0 10px;
+            &:hover {
+                background-color: #3a4b5f;
+            }
+            &:first-of-type {
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #edf0f4;
+    .container {
+        padding: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        color: #7c90a5;
+        h4 {
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+        .col {
+            display: flex;
+            flex-direction: column;
+        }
+        .button {
+            margin-bottom: 1rem;
+            text-decoration: none;
+            font-weight: 500;
+            color: #7c90a5;
+        }
+    }
+}
+
+header .container,
+footer .container,
+section .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}

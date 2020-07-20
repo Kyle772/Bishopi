@@ -1,0 +1,96 @@
+header .container {
+  padding: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
+}
+
+header .container .logo {
+  width: 200px;
+  margin-right: auto;
+}
+
+header .container .buttonCon,
+header .container .ctaCon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .buttonCon .button,
+header .container .ctaCon .button {
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #29323d;
+}
+
+header .container .buttonCon .cta,
+header .container .ctaCon .cta {
+  background-color: #29323d;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 30px;
+  margin: 0 10px;
+}
+
+header .container .buttonCon .cta:hover,
+header .container .ctaCon .cta:hover {
+  background-color: #3a4b5f;
+}
+
+header .container .buttonCon .cta:first-of-type,
+header .container .ctaCon .cta:first-of-type {
+  margin-left: 30px;
+}
+
+footer {
+  background-color: #edf0f4;
+}
+
+footer .container {
+  padding: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: #7c90a5;
+}
+
+footer .container h4 {
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+footer .container .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .container .button {
+  margin-bottom: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: #7c90a5;
+}
+
+header .container,
+footer .container,
+section .container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+/*# sourceMappingURL=app.css.map */

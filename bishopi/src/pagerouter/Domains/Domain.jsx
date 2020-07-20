@@ -10,7 +10,7 @@ class DomainPage extends React.Component {
 
   componentDidMount() {}
   
-  render () {
+  render () {return <div></div>
     }
 }
 

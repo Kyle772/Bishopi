@@ -1,26 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import Home from './PageRouter/Home/Home';
+import ApiUsage from './PageRouter/APIUsage/ApiUsage';
+import Billing from './PageRouter/Billing/Billing';
+import Domains from './PageRouter/Domains/Domain';
+import Pricing from './PageRouter/Pricing/Pricing';
+import Subscriptions from './PageRouter/Subscriptions/Subscriptions';
+import Support from './PageRouter/Support/Support';
+import Account from './PageRouter/Account/Account';
+import ProfileEdit from './PageRouter/EditProfile/EditProfile';
+
 import './App.css';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    useLocation,
+    withRouter
+} from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+          <div>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    );
 }
 
 export default App;
