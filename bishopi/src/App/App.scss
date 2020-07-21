@@ -1,3 +1,7 @@
+body {
+    position: relative;
+}
+
 header .container {
     padding: 30px;
     display: grid;
@@ -60,6 +64,7 @@ footer {
 header .container,
 footer .container,
 section .container {
+    box-sizing: border-box;
     max-width: 1200px;
     width: 100%;
     margin: auto;
