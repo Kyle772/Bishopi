@@ -1,0 +1,22 @@
+<svg id="bgshape.svg" xmlns="http://www.w3.org/2000/svg" width="1920" height="980.59" viewBox="0 0 1920 980.59">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        opacity: 0.05;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        opacity: 0.03;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M874,6865S517.3,7233.22,0,7079V6863Z" transform="translate(0 -6863)"/>
+  <path class="cls-1" d="M620,6865S427.381,7046.98-4,7006V6864Z" transform="translate(0 -6863)"/>
+  <path class="cls-2" d="M1921,7196c-122.03,143.78-350.43,490.07-599,520S383.6,7430.83,132,7842.7H1920S1925.01,7372.79,1921,7196Z" transform="translate(0 -6863)"/>
+  <path class="cls-2" d="M1920,7524c-162.71,129.95-317.7,302.01-643,241-430.631-80.77-846.3-169.62-1028,78.61L1920,7840S1920.51,7640.79,1920,7524Z" transform="translate(0 -6863)"/>
+</svg>
