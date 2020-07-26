@@ -1,2 +1,0 @@
-# bishopi-front
-Bishopi frontend
