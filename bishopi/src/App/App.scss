@@ -6,6 +6,9 @@ header .container {
     padding: 30px;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+    &:before {
+        display: none !important;
+    }
     .logo {
         width: 200px;
         margin-right: auto;

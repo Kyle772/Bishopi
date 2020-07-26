@@ -33,8 +33,8 @@ class Header extends React.Component {
                         <Link to="/support" className="button">Support</Link>
                     </div>
                     <div className="ctaCon">
-                        <Link className="button cta">Login</Link>
-                        <Link className="button cta">Signup</Link>
+                        <Link to="/login" className="button cta">Login</Link>
+                        <Link to="/signup" className="button cta">Signup</Link>
                     </div>
                 </Router>
             </div>

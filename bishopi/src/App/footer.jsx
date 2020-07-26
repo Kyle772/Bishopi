@@ -22,24 +22,24 @@ class Header extends React.Component {
   render () { return <React.Fragment>
         <footer className="">
         <div className="container">
-            <div class="col col-3">
+            <div className="col col-3">
                 <h4>Bishopi</h4>
                 <Router>
-                    <Link className="button">About</Link>
-                    <Link className="button">Domains</Link>
-                    <Link className="button">Auctions</Link>
-                    <Link className="button">Pricing</Link>
-                    <Link className="button">Features</Link>
-                    <Link className="button">Support</Link>
+                <Link to="/about" className="button">About</Link>
+                        <Link to="/domains" className="button">Domains</Link>
+                        <Link to="/auctions" className="button">Auctions</Link>
+                        <Link to="/pricing" className="button">Pricing</Link>
+                        <Link to="/features" className="button">Features</Link>
+                        <Link to="/support" className="button">Support</Link>
                 </Router>
             </div>
-            <div class="col col-3">
+            <div className="col col-3">
                 <h4>Company</h4>
             </div>
-            <div class="col col-3">
+            <div className="col col-3">
                 <h4>Support</h4>
             </div>
-            <div class="col col-3">
+            <div className="col col-3">
                 <h4>Social</h4>
             </div>
         </div>

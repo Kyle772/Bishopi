@@ -10,6 +10,10 @@ header .container {
       grid-template-columns: 1fr 3fr 1fr;
 }
 
+header .container:before {
+  display: none !important;
+}
+
 header .container .logo {
   width: 200px;
   margin-right: auto;
