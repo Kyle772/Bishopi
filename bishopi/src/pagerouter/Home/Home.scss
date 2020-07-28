@@ -12,6 +12,10 @@
     }
 }
 
+header.sticky {
+    animation-duration: 250ms;
+}
+
 header.sticky+section {
     padding-top: 112px; // Check it matches header height
 }
@@ -28,9 +32,11 @@ form {
         margin-left: 15px;
     }
     @media screen and (max-width: 740px) {
-        flex-wrap: wrap;
+        flex-wrap: wrap !important;
         input {
             flex-shrink: 1;
+            padding-right: 15px;
+            padding-left: 15px;
             width: 50% !important;
         }
         button {
@@ -73,7 +79,7 @@ form {
 #mainfeatures,
 #whyus {
     &.container {
-        padding: 120px 0;
+        padding: 120px 15px;
         &>p {
             margin-bottom: 4rem;
         }
@@ -82,6 +88,9 @@ form {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 30px;
+        @media screen and (max-width: 400px) {
+            grid-template-columns: 1fr;
+        }
         .single-special-feature {
             display: flex;
             flex-direction: column;
@@ -147,7 +156,7 @@ form {
         }
     }
     .container {
-        padding: 120px 0;
+        padding: 120px 15px;
     }
     .package-name {
         h3 {

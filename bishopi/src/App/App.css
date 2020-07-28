@@ -30,12 +30,19 @@ header .container .desktop-menu-con {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 header .container .desktop-menu-con .menu .menu-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-left: 15px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -44,6 +51,20 @@ header .container .desktop-menu-con .menu .menu-items {
 
 header .container .desktop-menu-con .menu .menu-items li {
   margin: 10px;
+}
+
+header .container .desktop-menu-con .menu .menu-items li.button.cta a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  white-space: nowrap;
+  border-radius: 3px;
+  background-color: #29323d;
+}
+
+header .container .desktop-menu-con .menu .menu-items li.button.cta a:hover {
+  background-color: #445364;
 }
 
 header .container .mobile-menu {
@@ -58,7 +79,7 @@ header .container .mobile-menu.collapsing {
 
 header .container .mobile-menu.show, header .container .mobile-menu.collapsing {
   position: fixed;
-  top: 50px;
+  top: 112px;
   right: 0;
   max-width: 300px;
   width: 100%;
@@ -73,15 +94,54 @@ header .container .mobile-menu.show .nav-item:hover, header .container .mobile-m
   font-weight: 600;
 }
 
-header .container .navbar span:first-of-type {
-  display: none;
+header .container .mobile-menu.show li.button.cta, header .container .mobile-menu.collapsing li.button.cta {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  margin: 30px;
+  margin-top: 15px;
 }
 
-header .container .navbar .collapsed span:first-of-type {
+header .container .mobile-menu.show li.button.cta a, header .container .mobile-menu.collapsing li.button.cta a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 600;
+  width: 100%;
+  color: white;
+  white-space: nowrap;
+  border-radius: 3px;
+  background-color: #29323d;
+}
+
+header .container .mobile-menu.show li.button.cta a:hover, header .container .mobile-menu.collapsing li.button.cta a:hover {
+  background-color: #445364;
+}
+
+header .container .mobile-menu.sticky.show {
+  top: 100% !important;
+}
+
+header .container .navbar span.fa-times {
   display: block;
 }
 
-header .container .navbar .collapsed span:last-of-type {
+header .container .navbar span.fa-bars {
+  display: none;
+}
+
+header .container .navbar .collapsed span.fa-bars {
+  display: block;
+}
+
+header .container .navbar .collapsed span.fa-times {
   display: none;
 }
 
@@ -96,14 +156,6 @@ header .container .ctaCon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-header .container .buttonCon .button,
-header .container .ctaCon .button {
-  padding: 10px;
-  text-decoration: none;
-  font-weight: 600;
-  color: #29323d;
 }
 
 .section-title > span {

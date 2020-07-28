@@ -15,6 +15,11 @@
   }
 }
 
+header.sticky {
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+}
+
 header.sticky + section {
   padding-top: 112px;
 }
@@ -41,12 +46,14 @@ form button {
 
 @media screen and (max-width: 740px) {
   form {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
   }
   form input {
     -ms-flex-negative: 1;
         flex-shrink: 1;
+    padding-right: 15px;
+    padding-left: 15px;
     width: 50% !important;
   }
   form button {
@@ -101,7 +108,7 @@ form button {
 
 #mainfeatures.container,
 #whyus.container {
-  padding: 120px 0;
+  padding: 120px 15px;
 }
 
 #mainfeatures.container > p,
@@ -116,6 +123,14 @@ form button {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
+}
+
+@media screen and (max-width: 400px) {
+  #mainfeatures .special-featured-list,
+  #whyus .special-featured-list {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 #mainfeatures .special-featured-list .single-special-feature,
@@ -216,7 +231,7 @@ form button {
 }
 
 #pricing .container {
-  padding: 120px 0;
+  padding: 120px 15px;
 }
 
 #pricing .package-name h3 {

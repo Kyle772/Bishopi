@@ -61,7 +61,7 @@ class Header extends React.Component {
                             <PageLink className="navbar-brand logo" to="/">
                                 <img className="logo" src={logo} />
                             </PageLink>
-                            <div className="desktop-menu-con col-xl-7 col-lg-7  d-none d-lg-block col-md-7 col-7 pr-0 text-lg-right">
+                            <div className="desktop-menu-con d-none d-lg-block text-lg-right">
                                 <nav className="menu">
                                     <ul className="menu-items">
                                         <li>
@@ -82,16 +82,23 @@ class Header extends React.Component {
                                         <li>
                                             <Link to="/features" className="button">Features</Link>
                                         </li>
-                                        <li>
+                                        <li className="mr-auto">
                                             <Link to="/support" className="button">Support</Link>
                                         </li>
+                                        <li className="button cta">
+                                            <Link to="/login" className="button">Login</Link>
+                                        </li>
+                                        <li className="button cta">
+                                            <Link to="/signup" className="button">Sign up</Link>
+                                        </li>
+
                                     </ul>
                                 </nav>
                             </div>
 
-                            <div className="ml-auto col-md-4 col-sm-4 col-6 d-block d-lg-none">
+                            <div className="ml-auto d-block d-lg-none">
                                 <nav className="navbar navbar-expand-lg navbar-light mobile-nav">
-                                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                                    <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                                         <span className="fal fa-bars" />
                                         <span className="fal fa-times" />
                                     </button>
@@ -120,6 +127,10 @@ class Header extends React.Component {
                                     </li>
                                     <li className="nav-item">
                                         <Link to="/support" className="button">Support</Link>
+                                    </li>
+                                    <li className="button cta">
+                                        <Link to="/login" className="button">Login</Link>
+                                        <Link to="/signup" className="button">Sign up</Link>
                                     </li>
                                 </ul>
                             </div>

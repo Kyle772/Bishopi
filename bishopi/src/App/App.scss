@@ -19,18 +19,34 @@ header .container {
     .desktop-menu-con {
         display: flex;
         align-items: center;
+        flex-grow: 1;
         .menu .menu-items {
             display: flex;
+            padding-left: 15px;
+            justify-content: flex-end;
             align-items: center;
             margin-bottom: 0;
             li {
                 margin: 10px;
             }
+            li.button.cta {
+                a {
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    font-weight: 600;
+                    color: white;
+                    white-space: nowrap;
+                    border-radius: 3px;
+                    background-color: #29323d;
+                    &:hover {
+                        background-color: #445364;
+                    }
+                }
+            }
         }
     }
     .mobile-menu {
         padding-left: 0;
-        ;
         &.collapsing {
             height: unset;
             overflow: hidden;
@@ -39,7 +55,7 @@ header .container {
         &.show,
         &.collapsing {
             position: fixed;
-            top: 50px;
+            top: 112px;
             right: 0;
             max-width: 300px;
             width: 100%;
@@ -50,17 +66,45 @@ header .container {
                     font-weight: 600;
                 }
             }
+            li.button.cta {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 15px;
+                margin: 30px;
+                margin-top: 15px;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    font-weight: 600;
+                    width: 100%;
+                    color: white;
+                    white-space: nowrap;
+                    border-radius: 3px;
+                    background-color: #29323d;
+                    &:hover {
+                        background-color: #445364;
+                    }
+                }
+            }
+        }
+        &.sticky.show {
+            top: 100% !important;
         }
     }
     .navbar {
-        span:first-of-type {
+        span.fa-times {
+            display: block;
+        }
+        span.fa-bars {
             display: none;
         }
         .collapsed {
-            span:first-of-type {
+            span.fa-bars {
                 display: block;
             }
-            span:last-of-type {
+            span.fa-times {
                 display: none;
             }
         }
@@ -70,12 +114,6 @@ header .container {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        .button {
-            padding: 10px;
-            text-decoration: none;
-            font-weight: 600;
-            color: #29323d;
-        }
     }
 }
 
