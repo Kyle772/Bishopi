@@ -2,16 +2,66 @@ body {
     position: relative;
 }
 
+header.sticky {
+    z-index: 1000;
+    background-color: white;
+}
+
 header .container {
-    padding: 30px;
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    &:before {
-        display: none !important;
-    }
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
     .logo {
-        width: 200px;
-        margin-right: auto;
+        max-width: 200px;
+    }
+    .desktop-menu-con {
+        display: flex;
+        align-items: center;
+        .menu .menu-items {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+            li {
+                margin: 10px;
+            }
+        }
+    }
+    .mobile-menu {
+        padding-left: 0;
+        ;
+        &.collapsing {
+            height: unset;
+            overflow: hidden;
+            position: unset;
+        }
+        &.show,
+        &.collapsing {
+            position: fixed;
+            top: 50px;
+            right: 0;
+            max-width: 300px;
+            width: 100%;
+            .nav-item {
+                padding: 20px 30px;
+                &:hover {
+                    background-color: rgba(0, 0, 0, .05);
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .navbar {
+        span:first-of-type {
+            display: none;
+        }
+        .collapsed {
+            span:first-of-type {
+                display: block;
+            }
+            span:last-of-type {
+                display: none;
+            }
+        }
     }
     .buttonCon,
     .ctaCon {
@@ -24,29 +74,69 @@ header .container {
             font-weight: 600;
             color: #29323d;
         }
-        .cta {
-            background-color: #29323d;
-            color: white;
-            border-radius: 5px;
-            padding: 10px 30px;
-            margin: 0 10px;
-            &:hover {
-                background-color: #3a4b5f;
-            }
-            &:first-of-type {
-                margin-left: 30px;
-            }
+    }
+}
+
+.section-title>span {
+    background-image: url('../Assets/images/span.png');
+    background-size: contain;
+}
+
+#standalone-title {
+    background: linear-gradient(73deg, rgba(74, 74, 142, 1) 0%, rgba(82, 82, 195, 1) 100%);
+    color: white;
+    padding: 120px 0;
+    display: flex;
+    flex-direction: column;
+    .theme-btn {
+        margin: 10px;
+        margin-top: 0;
+        transition: 300ms background-color ease-out;
+        &:hover {
+            text-decoration: none;
         }
+    }
+    h2 {
+        color: white;
     }
 }
 
 footer {
     background-color: #edf0f4;
+    .footer-logo {
+        p {
+            color: rgb(33, 37, 41);
+        }
+        a img {
+            margin-left: -10px;
+        }
+    }
+    .footer-bottom .container {
+        grid-template-columns: 1fr 1fr;
+        div .payment-support {
+            margin-left: auto;
+        }
+    }
     .container {
         padding: 30px;
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 30px;
         color: #7c90a5;
+        @media screen and (max-width: 800px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media screen and (max-width: 399px) {
+            grid-template-columns: 1fr;
+            &>div {
+                padding: 0;
+            }
+        }
+        li a,
+        .foo-wid-title h3 {
+            color: rgb(33, 37, 41);
+        }
         h4 {
             text-transform: uppercase;
             margin-bottom: 1.5rem;
@@ -62,6 +152,23 @@ footer {
             color: #7c90a5;
         }
     }
+    .social-pages a {
+        color: rgb(33, 37, 41);
+    }
+    .copyright-info {
+        display: flex;
+        height: 100%;
+        justify-content: flex-start;
+        span {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    }
+}
+
+.row {
+    box-sizing: border-box;
+    margin: unset !important;
 }
 
 header .container,

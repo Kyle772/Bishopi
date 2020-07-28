@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 class SectionTitle extends Component {
     render() {
-        var {Title, Titlep} = this.props;
+        var { Title, Titlep } = this.props;
         return (
             <div className="row">
                 <div className="col-lg-8 col-md-10 col-12 offset-lg-2 offset-md-1">

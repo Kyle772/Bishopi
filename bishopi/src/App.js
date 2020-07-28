@@ -10,6 +10,7 @@ import Account from './PageRouter/Account/Account';
 import ProfileEdit from './PageRouter/EditProfile/EditProfile';
 import bootstrap from 'react-bootstrap'
 import './App.css';
+import AOS from 'aos';
 
 import {
     BrowserRouter as Router,
@@ -21,6 +22,7 @@ import {
 } from "react-router-dom";
 
 function App() {
+    AOS.init();
     return (
         <Router>
           <div>

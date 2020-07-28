@@ -1,0 +1,83 @@
+.hero-bg {
+    background: rgb(74, 74, 142);
+    background: linear-gradient(73deg, rgba(74, 74, 142, 1) 0%, rgba(82, 82, 195, 1) 100%);
+}
+
+.hero-wrapper .single-hero {
+    min-height: 500px;
+}
+
+form {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    input {
+        flex-grow: 1;
+    }
+    button {
+        margin-left: 15px;
+    }
+}
+
+#service {
+    background: none;
+    color: inherit !important;
+    &.service-three .section-title h2,
+    &.service-three .section-title p {
+        color: inherit !important;
+    }
+    .service-box-2 {
+        margin-top: 100px;
+        box-shadow: 0px 0px 0 0px rgba(20, 27, 201, 0.05);
+        transition: box-shadow 300ms ease-out;
+        background: white;
+        &:hover {
+            background: white;
+            box-shadow: 0px 0px 25px 0px rgba(20, 27, 201, 0.25);
+        }
+        &.servicev3 h4 {
+            margin-top: -50px;
+        }
+        &.servicev3 h4,
+        &.servicev3 p {
+            color: rgb(33, 37, 41) !important;
+            transition: color 250ms ease-out;
+        }
+    }
+    .service-icon img {
+        max-height: 150px;
+    }
+}
+
+#mainfeatures {
+    &.container {
+        padding: 120px 0;
+    }
+}
+
+#pricing {
+    .container {
+        padding: 120px 0;
+    }
+    .package-name {
+        h3 {
+            color: rgb(33, 37, 41);
+        }
+    }
+    .single-package .package-features-price {
+        padding: 20px;
+        padding-bottom: 0;
+        .price {
+            border-radius: 0;
+            width: 100%;
+            box-shadow: none;
+            border-top: 1px solid rgba(0, 0, 0, .05);
+            margin-top: 50px;
+            height: 80px;
+            line-height: 100px;
+            span {
+                height: 60px;
+            }
+        }
+    }
+}

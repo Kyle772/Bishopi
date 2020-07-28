@@ -1,94 +1,84 @@
 import React, { Component } from 'react'
 import SectionTitle from '../SectionTitle'
 
-
 class PriceThree extends Component {
-
     render() {
-        var bg= require('../../assets/img/p1.svg');
-        var bg2= require('../../assets/img/p2.svg');
-        var bg3= require('../../assets/img/p3.svg');
+        var bg = require('../../Assets/images/pricing/1.png');
+        var bg2 = require('../../Assets/images/pricing/1.png');
+        var bg3 = require('../../Assets/images/pricing/1.png');
 
         return (
             <section className="package-items-wrap section-padding pt-0 mbm-20" id="price">
-                <div className="container">
-                    
-                <SectionTitle Title="Choose The Best Hosting Plan"  Titlep="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since" />  
-
+                <div className="container">                    
+                <SectionTitle Title="Pricing Plan"  Titlep="Choose the plan that's right for your growing team!" />  
                     <div className="row">
                         <div className="col-12 col-lg-12">
                             <div className="tab-content">
                                 <div id="month" className="tab-pane in active">
                                     <div className="row">
-                                        <div className="col-xl-4 col-md-6 col-sm-12 col-12">
+                                        <div className="col-xl-4 col-md-4 col-sm-12 col-12">
                                             <div className="single-package" data-aos="fade-up" data-aos-duration={1000}>
                                                 <div className="package-shape" style ={ { backgroundImage: "url("+bg+")" } } />
                                                 <div className="package-name text-center">
-                                                    <h3>Free Trial</h3>
+                                                    <h4>Basic</h4>
                                                 </div>
                                                 <div className="package-features-price">
-                                                    <div className="price text-center">
-                                                        <span>0.00</span>
-                                                    </div>
                                                     <ul>
-                                                        <li><i className="fal fa-check-circle" />10GB Storage Space</li>
-                                                        <li><i className="fal fa-check-circle" />50GB Bandwidth</li>
-                                                        <li><i className="fal fa-check-circle" />10 Free Sub-Domains</li>
-                                                        <li className="del"><i className="fal fa-times-circle" />100 E-mail Accounts</li>
-                                                        <li className="del"><i className="fal fa-times-circle" />Control Panel &amp; FTP</li>
-                                                        <li className="del"><i className="fal fa-times-circle" />Unlimited Support</li>
+                                                        <li><i className="fal fa-check-circle" />Up to 5 users</li>
+                                                        <li><i className="fal fa-check-circle" />200 objects / month</li>
+                                                        <li><i className="fal fa-check-circle" />Unlimited queries</li>
+                                                        <li><i className="fal fa-check-circle" />Unlimited analytics</li>
                                                     </ul>
+                                                    <div className="price text-center">
+                                                        <span>59</span>
+                                                    </div>
                                                 </div>
                                                 <div className="package-btn">
-                                                    <a href=".#">try now</a>
+                                                    <a href=".#">Get Started</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-xl-4 col-md-6 col-sm-12 col-12">
+                                        <div className="col-xl-4 col-md-4 col-sm-12 col-12">
                                             <div className="single-package active">
                                                 <div className="package-shape" style ={ { backgroundImage: "url("+bg2+")" } } />
                                                 <div className="package-name text-center">
-                                                    <h3>Startup</h3>
+                                                    <h4>Optimum</h4>
                                                 </div>
                                                 <div className="package-features-price">
-                                                    <div className="price text-center">
-                                                        <span>10.00</span>
-                                                    </div>
                                                     <ul>
-                                                        <li><i className="fal fa-check-circle" />10GB Storage Space</li>
-                                                        <li><i className="fal fa-check-circle" />50GB Bandwidth</li>
-                                                        <li><i className="fal fa-check-circle" />10 Free Sub-Domains</li>
-                                                        <li><i className="fal fa-check-circle" />100 E-mail Accounts</li>
-                                                        <li className="del"><i className="fal fa-times-circle" />Control Panel &amp; FTP</li>
-                                                        <li className="del"><i className="fal fa-times-circle" />Unlimited Support</li>
+                                                        <li><i className="fal fa-check-circle" />Up to 15 users</li>
+                                                        <li><i className="fal fa-check-circle" />400 objects / month</li>
+                                                        <li><i className="fal fa-check-circle" />Unlimited queries</li>
+                                                        <li><i className="fal fa-check-circle" />Unlimited analytics</li>
                                                     </ul>
+                                                    <div className="price text-center">
+                                                        <span>99</span>
+                                                    </div>
                                                 </div>
                                                 <div className="package-btn">
-                                                    <a href=".#">try now</a>
+                                                    <a href=".#">Get Started</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-xl-4 col-md-6 col-sm-12 col-12">
+                                        <div className="col-xl-4 col-md-4 col-sm-12 col-12">
                                             <div className="single-package" data-aos="fade-up" data-aos-duration={1000}>
                                                 <div className="package-shape" style ={ { backgroundImage: "url("+bg3+")" } } />
                                                 <div className="package-name text-center">
-                                                    <h3>Premium</h3>
+                                                    <h4>Full</h4>
                                                 </div>
                                                 <div className="package-features-price">
-                                                    <div className="price text-center">
-                                                        <span>89.00</span>
-                                                    </div>
                                                     <ul>
-                                                        <li><i className="fal fa-check-circle" />10GB Storage Space</li>
-                                                        <li><i className="fal fa-check-circle" />50GB Bandwidth</li>
-                                                        <li><i className="fal fa-check-circle" />10 Free Sub-Domains</li>
-                                                        <li><i className="fal fa-check-circle" />100 E-mail Accounts</li>
-                                                        <li><i className="fal fa-check-circle" />Control Panel &amp; FTP</li>
-                                                        <li><i className="fal fa-times-circle" />Unlimited Support</li>
+                                                        <li><i className="fal fa-check-circle" />Up to 50 users</li>
+                                                        <li><i className="fal fa-check-circle" />Unlimited objects</li>
+                                                        <li><i className="fal fa-check-circle" />Unlimited queries</li>
+                                                        <li><i className="fal fa-check-circle" />Unlimited analytics</li>
                                                     </ul>
+                                                    <div className="price text-center">
+                                                        <span>149</span>
+                                                    </div>
                                                 </div>
                                                 <div className="package-btn price-btn3">
-                                                    <a href=".#">try now</a>
+                                                    <a href=".#">Get Started</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -100,7 +90,7 @@ class PriceThree extends Component {
                 </div>
             </section>
 
-            
+
         )
     }
 }
