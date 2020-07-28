@@ -24,6 +24,7 @@ class PriceThree extends Component {
                                         </li>
                                         <span class="toggle-active"></span>
                                     </ul>
+                                    <div className="discount">Save up to 20%!</div>
                                 </div>
                             </div>
                             <div className="tab-content">
@@ -97,7 +98,7 @@ class PriceThree extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div id="year" className="tab-pane in active">
+                                <div id="year" className="tab-pane in">
                                     <div className="row">
                                         <div className="col-xl-4 col-md-4 col-sm-12 col-12">
                                             <div className="single-package">

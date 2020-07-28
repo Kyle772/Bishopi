@@ -16,6 +16,7 @@ export class HeroThree extends Component {
         }
 
         return (
+            <React.Fragment>
             <section className="hero-wrapper">
                 <div className="single-hero d-flex align-items-center">
                     <div className="hero-bg"></div>
@@ -40,6 +41,7 @@ export class HeroThree extends Component {
                     </div>
                 </div>
             </section>
+            </React.Fragment>
         )
     }
 }

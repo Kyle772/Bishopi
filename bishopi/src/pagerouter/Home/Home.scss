@@ -1,21 +1,42 @@
 .hero-bg {
+    top: 0;
+    left: 0;
     background: rgb(74, 74, 142);
     background: linear-gradient(73deg, rgba(74, 74, 142, 1) 0%, rgba(82, 82, 195, 1) 100%);
 }
 
 .hero-wrapper .single-hero {
     min-height: 500px;
+    @media screen and (max-width: 740px) {
+        min-height: 600px;
+    }
+}
+
+header.sticky+section {
+    padding-top: 112px; // Check it matches header height
 }
 
 form {
     display: flex;
     padding-left: 20px;
     padding-right: 20px;
+    flex-wrap: nowrap !important;
     input {
         flex-grow: 1;
     }
     button {
         margin-left: 15px;
+    }
+    @media screen and (max-width: 740px) {
+        flex-wrap: wrap;
+        input {
+            flex-shrink: 1;
+            width: 50% !important;
+        }
+        button {
+            flex-grow: 1;
+            margin: 15px 0 60px 0 !important;
+        }
     }
 }
 
@@ -49,13 +70,82 @@ form {
     }
 }
 
-#mainfeatures {
+#mainfeatures,
+#whyus {
     &.container {
         padding: 120px 0;
+        &>p {
+            margin-bottom: 4rem;
+        }
+    }
+    .special-featured-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        .single-special-feature {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .special-icon {
+                margin-bottom: 30px;
+                background-color: rgba(0, 0, 0, .05);
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .sf-text {
+                text-align: center;
+                span {
+                    font-weight: 600;
+                }
+                p {
+                    margin-top: .6rem;
+                    font-size: 10pt;
+                }
+            }
+        }
     }
 }
 
 #pricing {
+    .package-control {
+        display: flex;
+        position: relative;
+        ul.nav.nav-pills {}
+        .discount {
+            position: absolute;
+            white-space: nowrap;
+            left: calc(50% + 225px);
+            top: 50%;
+            color: black;
+            font-weight: 700;
+            transform: translateX(-50%) translateY(-50%);
+            background-color: #efeff3;
+            padding: 5px;
+            padding-left: 2px;
+            @media screen and (max-width: 800px) {
+                display: none;
+            }
+            &:after {
+                display: block;
+                content: "";
+                align-self: center;
+                z-index: -1;
+                position: absolute;
+                top: 50%;
+                left: calc(-.5rem - 2.5px);
+                width: calc(1rem + 5px);
+                height: calc(1rem + 5px);
+                background-color: #efeff3;
+                transform-origin: center;
+                transform: translateY(-50%) rotate(45deg);
+            }
+        }
+    }
     .container {
         padding: 120px 0;
     }

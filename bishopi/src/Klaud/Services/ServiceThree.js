@@ -18,7 +18,7 @@ class ServiceThree extends Component {
                             return(
                                 index < 6 ? 
                                 <div className="col-lg-4 col-md-6 col-12" key={item.id} >
-                                    <div className="service-box-2 servicev3" data-aos="zoom-in" data-aos-duration={1000}>
+                                    <div className="service-box-2 servicev3">
                                         <div className="service-icon">
                                             <img src={require (`../../Assets/images/services/${item.imgUrl}`)} alt="klaud" />
                                         </div>

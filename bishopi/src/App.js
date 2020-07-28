@@ -25,13 +25,11 @@ function App() {
     AOS.init();
     return (
         <Router>
-          <div>
           <Switch>
             <Route exact path="/">
               <Home />
             </Route>
           </Switch>
-        </div>
       </Router>
     );
 }

@@ -1,4 +1,6 @@
 .hero-bg {
+  top: 0;
+  left: 0;
   background: #4a4a8e;
   background: linear-gradient(73deg, #4a4a8e 0%, #5252c3 100%);
 }
@@ -7,12 +9,24 @@
   min-height: 500px;
 }
 
+@media screen and (max-width: 740px) {
+  .hero-wrapper .single-hero {
+    min-height: 600px;
+  }
+}
+
+header.sticky + section {
+  padding-top: 112px;
+}
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-left: 20px;
   padding-right: 20px;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
 }
 
 form input {
@@ -23,6 +37,24 @@ form input {
 
 form button {
   margin-left: 15px;
+}
+
+@media screen and (max-width: 740px) {
+  form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  form input {
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    width: 50% !important;
+  }
+  form button {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin: 15px 0 60px 0 !important;
+  }
 }
 
 #service {
@@ -67,8 +99,120 @@ form button {
   max-height: 150px;
 }
 
-#mainfeatures.container {
+#mainfeatures.container,
+#whyus.container {
   padding: 120px 0;
+}
+
+#mainfeatures.container > p,
+#whyus.container > p {
+  margin-bottom: 4rem;
+}
+
+#mainfeatures .special-featured-list,
+#whyus .special-featured-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+#mainfeatures .special-featured-list .single-special-feature,
+#whyus .special-featured-list .single-special-feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mainfeatures .special-featured-list .single-special-feature .special-icon,
+#whyus .special-featured-list .single-special-feature .special-icon {
+  margin-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mainfeatures .special-featured-list .single-special-feature .sf-text,
+#whyus .special-featured-list .single-special-feature .sf-text {
+  text-align: center;
+}
+
+#mainfeatures .special-featured-list .single-special-feature .sf-text span,
+#whyus .special-featured-list .single-special-feature .sf-text span {
+  font-weight: 600;
+}
+
+#mainfeatures .special-featured-list .single-special-feature .sf-text p,
+#whyus .special-featured-list .single-special-feature .sf-text p {
+  margin-top: .6rem;
+  font-size: 10pt;
+}
+
+#pricing .package-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+#pricing .package-control .discount {
+  position: absolute;
+  white-space: nowrap;
+  left: calc(50% + 225px);
+  top: 50%;
+  color: black;
+  font-weight: 700;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background-color: #efeff3;
+  padding: 5px;
+  padding-left: 2px;
+}
+
+@media screen and (max-width: 800px) {
+  #pricing .package-control .discount {
+    display: none;
+  }
+}
+
+#pricing .package-control .discount:after {
+  display: block;
+  content: "";
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: calc(-.5rem - 2.5px);
+  width: calc(1rem + 5px);
+  height: calc(1rem + 5px);
+  background-color: #efeff3;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
 }
 
 #pricing .container {
