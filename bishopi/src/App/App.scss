@@ -101,6 +101,21 @@ header .container {
     }
 }
 
+.package-control ul.nav.nav-pills {
+    flex-wrap: nowrap;
+    li a {
+        font-weight: 600;
+        box-sizing: border-box;
+        &.active {
+            background-image: linear-gradient(-45deg, #fb0053 0%, #f85a29 100%);
+            background-image: -moz-linear-gradient(-45deg, #fb0053 0%, #f85a29 100%);
+            background-image: -webkit-linear-gradient(-45deg, #fb0053 0%, #f85a29 100%);
+            background-image: -ms-linear-gradient(-45deg, #fb0053 0%, #f85a29 100%);
+            color: white;
+        }
+    }
+}
+
 footer {
     background-color: #edf0f4;
     .footer-logo {
