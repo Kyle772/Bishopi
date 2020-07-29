@@ -93,8 +93,11 @@ class HomePage extends React.Component {
             </div>
         </div>
     </div>
-    <div id="pricing" className="container">
+    <div id="pricing">
+        <div  className="container">
         <PriceThree/>
+
+        </div>
     </div>
     <div id="whyus" className="">
         <WhyUs/>

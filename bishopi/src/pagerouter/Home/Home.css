@@ -1,8 +1,8 @@
 .hero-bg {
-  top: 0;
-  left: 0;
+  top: 0 !important;
+  left: 0 !important;
   background: #4a4a8e;
-  background: linear-gradient(73deg, #4a4a8e 0%, #5252c3 100%);
+  background-color: #298bf0;
 }
 
 .hero-wrapper .single-hero {
@@ -40,8 +40,17 @@ form input {
           flex-grow: 1;
 }
 
+form .select {
+  color: #298bf0;
+}
+
+form .select .select-styled:after {
+  color: #298bf0;
+}
+
 form button {
   margin-left: 15px;
+  background-color: #298bf0 !important;
 }
 
 @media screen and (max-width: 740px) {
@@ -184,6 +193,14 @@ form button {
   font-size: 10pt;
 }
 
+#pricing {
+  background-image: url("https://enginehosting-html.fruitfulcode.com/wp-content/themes/enginehosting-html/assets/images/line-prefoter.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  margin-bottom: -3.3%;
+}
+
 #pricing .package-control {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -236,6 +253,12 @@ form button {
 
 #pricing .package-name h3 {
   color: #212529;
+}
+
+#pricing .single-package .package-btn a {
+  background-image: unset;
+  background-color: #298bf0;
+  border-radius: 5px;
 }
 
 #pricing .single-package .package-features-price {
