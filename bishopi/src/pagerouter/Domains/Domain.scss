@@ -5,6 +5,10 @@
         @media screen and (max-width: 740px) {
             min-height: 250px;
         }
+        .hero-bg .row {
+            grid-template-columns: 1fr;
+            width: 100%;
+        }
     }
 }
 

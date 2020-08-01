@@ -31,6 +31,20 @@
           justify-content: center;
 }
 
+.hero-wrapper .single-hero .hero-bg .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr 8fr;
+      grid-template-columns: 4fr 8fr;
+}
+
+@media screen and (max-width: 800px) {
+  .hero-wrapper .single-hero .hero-bg .row {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .hero-wrapper .single-hero .results {
   padding: 0 30px;
 }
@@ -221,6 +235,19 @@ form button {
   font-size: 4rem;
 }
 
+#mainfeatures.blue {
+  background-color: #298bef;
+}
+
+#mainfeatures.blue .container {
+  color: white;
+}
+
+#mainfeatures.blue .container span,
+#mainfeatures.blue .container p {
+  color: white;
+}
+
 #mainfeatures,
 #whyus {
   background-color: #298bf0;
@@ -238,7 +265,7 @@ form button {
 
 #mainfeatures .container,
 #whyus .container {
-  padding: 120px 15px;
+  padding: 120px 30px;
 }
 
 #mainfeatures .container p,
@@ -274,6 +301,14 @@ form button {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
+}
+
+@media screen and (max-width: 740px) {
+  #mainfeatures .special-featured-list,
+  #whyus .special-featured-list {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -339,6 +374,8 @@ form button {
 #mainfeatures .blurbs i,
 #whyus .blurbs i {
   font-size: 13rem;
+  margin-bottom: 10vh;
+  margin-top: 15px;
 }
 
 #pricing {

@@ -27,16 +27,16 @@ class HomePage extends React.Component {
                 imgUrl=""
                 inlineResults={true}
             />
-            <div id="service" className="container">
+            <section id="service" className="container">
                 <Services ServiceData={ServiceData} />
-            </div>
-            <div id="standalone-title">
+            </section>
+            <section id="standalone-title">
                 <SectionTitle Title="Access exclusive features with a free account" />
                 <p className="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio fugiat maiores!</p>
                 <a href="#" class="theme-btn ml-auto mr-auto">Create a FREE account</a>
                 <p className="text-center">No credit card required</p>
-            </div>
-            <div id="mainfeatures">
+            </section>
+            <section id="mainfeatures" class="blue">
                 <div className="container">
                     <SectionTitle Title="Main Features" />
                     <p className="text-center">Here we can introduce the wide range of features that the site offers for managing domains.</p>
@@ -97,18 +97,18 @@ class HomePage extends React.Component {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="pricing">
+            </section>
+            <section id="pricing">
                 <div className="container">
                     <PriceThree />
                 </div>
-            </div>
-            <div id="whyus" >
+            </section>
+            <section id="whyus" >
                 <div className="container">
                     <WhyUs />
                     <ContentBlock />
                 </div>
-            </div>
+            </section>
         </React.Fragment>
     }
 }

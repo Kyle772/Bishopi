@@ -12,6 +12,12 @@
   }
 }
 
+.mini-hero .single-hero .hero-bg .row {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  width: 100%;
+}
+
 .logoSpread {
   max-width: 500px;
   display: -ms-grid;

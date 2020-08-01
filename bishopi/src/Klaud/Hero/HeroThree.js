@@ -24,17 +24,17 @@ export class HeroThree extends Component {
                     <div className="single-hero d-flex align-items-center">
                         <div className="container hero-bg">
                             <div className="row align-items-center">
-                                <div className="col-lg-8 offset-lg-2 col-xl-4 offset-xl-0  col-md-10 offset-md-1 col-12">
-                                    {BigTitle ? <div className="hero-contents text-white text-center text-xl-left mb-40">
+                                {BigTitle ? <div className="col">
+                                    <div className="hero-contents text-white text-center text-xl-left mb-40">
                                         <h2>{BigTitle}</h2>
                                         <p>{SubTitle}</p>
-                                    </div> : ""}
+                                    </div>
                                     {AchievementBlock ? AchievementBlock : ""}
-                                </div>
-                                <div className="col-12 col-xl-8">
+                                </div> : ""}
+                                <div className="col">
                                     <div className="hero-v3-img pl-20 pr-20">
                                         <div className="fullwidth">
-                                            <SearchBar inlineResults={ this.props.inlineResults } resultTarget={ this.props.searchResultTarget } />
+                                            <SearchBar inlineResults={this.props.inlineResults} resultTarget={this.props.searchResultTarget} />
                                         </div>
                                     </div>
                                 </div>
