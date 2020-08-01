@@ -1,5 +1,16 @@
 body {
   position: relative;
+  background-color: #f6fafd !important;
+}
+
+:root {
+  --fa-primary-color: #2d76eb;
+  --fa-secondary-color: #1f7fe2;
+}
+
+.fa-invert {
+  --fa-primary-color: #d5deec;
+  --fa-secondary-color: #c8d4e0;
 }
 
 header {
@@ -23,7 +34,22 @@ header.sticky {
   padding: 0;
 }
 
-.button {
+header.sticky .container a {
+  color: #212529;
+}
+
+header.sticky .container a:hover {
+  color: #40454b;
+}
+
+header.sticky .logo {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+
+.button,
+button {
+  border-radius: 3px;
   -webkit-transition: background-color, -webkit-box-shadow 200ms ease-out;
   transition: background-color, -webkit-box-shadow 200ms ease-out;
   transition: background-color, box-shadow 200ms ease-out;
@@ -32,13 +58,15 @@ header.sticky {
           box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.05);
 }
 
-.button.cta:hover {
+.button.cta:hover,
+button.cta:hover {
   -webkit-box-shadow: 0 3px 10px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 10px 5px rgba(0, 0, 0, 0.1);
   background-color: #36485e;
 }
 
-.button.li {
+.button.li,
+button.li {
   background-color: transparent;
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.05);
@@ -54,6 +82,10 @@ header .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+header .container a {
+  color: white;
 }
 
 header .container .logo {
@@ -97,11 +129,21 @@ header .container .desktop-menu-con .menu .menu-items li.button.cta a {
   color: white;
   white-space: nowrap;
   border-radius: 3px;
-  background-color: #29323d;
+  background-color: #5791ef;
+  -webkit-box-shadow: 1px 1px 22px rgba(14, 21, 34, 0.19);
+          box-shadow: 1px 1px 22px rgba(14, 21, 34, 0.19);
 }
 
 header .container .desktop-menu-con .menu .menu-items li.button.cta a:hover {
-  background-color: #36485e;
+  background-color: #6b9ef1;
+}
+
+header .container .desktop-menu-con .menu .menu-items li.button.cta:last-of-type a {
+  background-color: #38d9c9;
+}
+
+header .container .desktop-menu-con .menu .menu-items li.button.cta:last-of-type a:hover {
+  background-color: #38cfd0;
 }
 
 header .container .mobile-menu {
@@ -125,6 +167,10 @@ header .container .mobile-menu.show, header .container .mobile-menu.collapsing {
 header .container .mobile-menu.show .nav-item, header .container .mobile-menu.collapsing .nav-item {
   padding: 20px 30px;
   color: #212529;
+}
+
+header .container .mobile-menu.show .nav-item a, header .container .mobile-menu.collapsing .nav-item a {
+  color: black;
 }
 
 header .container .mobile-menu.show .nav-item:hover, header .container .mobile-menu.collapsing .nav-item:hover {
@@ -197,6 +243,10 @@ header .container .navbar .collapsed span.fa-bars {
 
 header .container .navbar .collapsed span.fa-times {
   display: none;
+}
+
+header .container .navbar .navbar-toggler {
+  background-color: white;
 }
 
 header .container .buttonCon,
@@ -279,6 +329,7 @@ footer .footer-logo p {
 
 footer .footer-logo a img {
   margin-left: -10px;
+  max-width: 100%;
 }
 
 footer .footer-bottom .container {
@@ -295,13 +346,13 @@ footer .container {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: (minmax(0, 1fr))[4];
+      grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-gap: 30px;
   color: white;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 740px) {
   footer .container {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;

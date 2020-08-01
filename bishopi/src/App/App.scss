@@ -1,5 +1,16 @@
 body {
     position: relative;
+    background-color: #f6fafd !important;
+}
+
+:root {
+    --fa-primary-color: #2d76eb;
+    --fa-secondary-color: #1f7fe2;
+}
+
+.fa-invert {
+    --fa-primary-color: #d5deec;
+    --fa-secondary-color: #c8d4e0;
 }
 
 header {
@@ -20,9 +31,20 @@ header.sticky {
     background-color: white;
     color: rgb(33, 37, 41);
     padding: 0;
+    .container a {
+        color: rgb(33, 37, 41);
+        &:hover {
+            color: rgb(64, 69, 75);
+        }
+    }
+    .logo {
+        filter: brightness(.5);
+    }
 }
 
-.button {
+.button,
+button {
+    border-radius: 3px;
     transition: background-color, box-shadow 200ms ease-out;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, .05);
     &.cta:hover {
@@ -41,6 +63,9 @@ header .container {
     margin-right: -30px;
     display: flex;
     align-items: center;
+    a {
+        color: white;
+    }
     .logo {
         max-width: 200px;
     }
@@ -65,9 +90,16 @@ header .container {
                     color: white;
                     white-space: nowrap;
                     border-radius: 3px;
-                    background-color: #29323d;
+                    background-color: #5791ef;
+                    box-shadow: 1px 1px 22px rgba(14, 21, 34, 0.19);
                     &:hover {
-                        background-color: #36485e;
+                        background-color: #6b9ef1;
+                    }
+                }
+                &:last-of-type a {
+                    background-color: #38d9c9;
+                    &:hover {
+                        background-color: #38cfd0;
                     }
                 }
             }
@@ -90,6 +122,9 @@ header .container {
             .nav-item {
                 padding: 20px 30px;
                 color: rgb(33, 37, 41);
+                a {
+                    color: black;
+                }
                 &:hover {
                     background-color: rgba(0, 0, 0, .05);
                     font-weight: 600;
@@ -146,6 +181,9 @@ header .container {
             span.fa-times {
                 display: none;
             }
+        }
+        .navbar-toggler {
+            background-color: white;
         }
     }
     .buttonCon,
@@ -214,6 +252,7 @@ footer {
         }
         a img {
             margin-left: -10px;
+            max-width: 100%;
         }
     }
     .footer-bottom .container {
@@ -226,11 +265,11 @@ footer {
         padding: 30px;
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
         grid-gap: 30px;
         //color: #7c90a5;
         color: white;
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 740px) {
             grid-template-columns: 1fr 1fr;
         }
         @media screen and (max-width: 399px) {

@@ -10,7 +10,10 @@ class AccountPage extends React.Component {
 
   componentDidMount() {}
   
-  render () {return <div></div>
+  render () {return <React.Fragment>
+    
+
+  </React.Fragment>
     }
 }
 

@@ -19,33 +19,13 @@ class Header extends React.Component {
         this.state = {};
     }
 
-    comment() {/* <header className="">
-  <div className="container">
-      <img className="logo" src={logo}/>
-      <Router>
-          <div className="buttonCon">
-              <Link to="/about" className="button">About</Link>
-              <Link to="/domains" className="button">Domains</Link>
-              <Link to="/auctions" className="button">Auctions</Link>
-              <Link to="/pricing" className="button">Pricing</Link>
-              <Link to="/features" className="button">Features</Link>
-              <Link to="/support" className="button">Support</Link>
-          </div>
-          <div className="ctaCon">
-              <Link to="/login" className="button cta">Login</Link>
-              <Link to="/signup" className="button cta">Signup</Link>
-          </div>
-      </Router>
-  </div>
-</header> */}
+    comment() {}
 
     componentDidMount() {
         $(window).scroll(function () {
             var Width = $(document).width();
             if ($("body").scrollTop() > 100 || $("html").scrollTop() > 100) {
-                if (Width > 767) {
                     $("header").addClass("sticky");
-                }
             } else {
                 $("header").removeClass("sticky");
             }
@@ -57,7 +37,7 @@ class Header extends React.Component {
             <header className="header-wraper">
                 <div className="main-menu">
                     <div className="container">
-                        <Router>
+
                             <PageLink className="navbar-brand logo" to="/">
                                 <img className="logo" src={logo} />
                             </PageLink>
@@ -68,28 +48,28 @@ class Header extends React.Component {
                                             <PageLink to="/">Home</PageLink>
                                         </li>
                                         <li>
-                                            <Link to="/about" className="button">About</Link>
+                                            <PageLink to="/about" className="button">About</PageLink>
                                         </li>
                                         <li>
-                                            <Link to="/domains" className="button">Domains</Link>
+                                            <PageLink to="/domains" className="button">Domains</PageLink>
                                         </li>
                                         <li>
-                                            <Link to="/auctions" className="button">Auctions</Link>
+                                            <PageLink to="/auctions" className="button">Auctions</PageLink>
                                         </li>
                                         <li>
-                                            <Link to="/pricing" className="button">Pricing</Link>
+                                            <PageLink to="/pricing" className="button">Pricing</PageLink>
                                         </li>
                                         <li>
-                                            <Link to="/features" className="button">Features</Link>
+                                            <PageLink to="/features" className="button">Features</PageLink>
                                         </li>
                                         <li className="mr-auto">
-                                            <Link to="/support" className="button">Support</Link>
+                                            <PageLink to="/support" className="button">Support</PageLink>
                                         </li>
                                         <li className="button cta">
-                                            <Link to="/login" className="button">Login</Link>
+                                            <PageLink to="/login" className="button">Login</PageLink>
                                         </li>
                                         <li className="button cta">
-                                            <Link to="/signup" className="button">Sign up</Link>
+                                            <PageLink to="/signup" className="button">Sign up</PageLink>
                                         </li>
 
                                     </ul>
@@ -111,30 +91,29 @@ class Header extends React.Component {
                                         <PageLink to="/">Home</PageLink>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="/about" className="button">About</Link>
+                                        <PageLink to="/about" className="button">About</PageLink>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="/domains" className="button">Domains</Link>
+                                        <PageLink to="/domains" className="button">Domains</PageLink>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="/auctions" className="button">Auctions</Link>
+                                        <PageLink to="/auctions" className="button">Auctions</PageLink>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="/pricing" className="button">Pricing</Link>
+                                        <PageLink to="/pricing" className="button">Pricing</PageLink>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="/features" className="button">Features</Link>
+                                        <PageLink to="/features" className="button">Features</PageLink>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="/support" className="button">Support</Link>
+                                        <PageLink to="/support" className="button">Support</PageLink>
                                     </li>
                                     <li className="button cta">
-                                        <Link to="/login" className="button">Login</Link>
-                                        <Link to="/signup" className="button">Sign up</Link>
+                                        <PageLink to="/login" className="button">Login</PageLink>
+                                        <PageLink to="/signup" className="button">Sign up</PageLink>
                                     </li>
                                 </ul>
                             </div>
-                        </Router>
                     </div>
                 </div>
             </header>

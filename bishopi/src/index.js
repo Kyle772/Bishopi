@@ -15,12 +15,22 @@ import './Assets/css/fontawesome.min.css';
 
 import 'bootstrap/dist/js/bootstrap.min.js';
 
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    useLocation,
+    withRouter
+} from "react-router-dom";
 
 ReactDOM.render(
     <React.StrictMode>
-    <Header/>
-    <App />
-    <Footer FooterData={FooterData}/>
+    <Router>
+      <Header/>
+      <App />
+      <Footer FooterData={FooterData}/>
+    </Router>
   </React.StrictMode>,
     document.getElementById('root')
 );

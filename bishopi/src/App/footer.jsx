@@ -54,7 +54,7 @@ class Header extends React.Component {
                             {
                                 FooterData.singleWidget.map(widget=> {
                                     return(
-                                    <div className="col-lg-3 col-md-6 col-sm-6 col-12" key={widget.id}>
+                                    <div className="col-12" key={widget.id}>
                                         <div className="single-footer-wid">
                                             <div className="foo-wid-title">
                                                 <h3 key={widget.id}>{widget.title}</h3>

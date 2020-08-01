@@ -1,18 +1,94 @@
-.hero-bg {
+.hero-wrapper .single-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 60vh;
+  background-color: #298bf0 !important;
+}
+
+.hero-wrapper .single-hero .hero-bg {
+  position: relative;
   top: 0 !important;
   left: 0 !important;
   background: #4a4a8e;
-  background-color: #298bf0;
+  background-color: #298bf0 !important;
+  min-height: unset;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.hero-wrapper .single-hero {
-  min-height: 500px;
+.hero-wrapper .single-hero .results {
+  padding: 0 30px;
 }
 
 @media screen and (max-width: 740px) {
-  .hero-wrapper .single-hero {
-    min-height: 600px;
+  .hero-wrapper .single-hero .results {
+    margin-top: 80px;
+    padding: 0 20px;
+    margin-bottom: 30px;
   }
+  .hero-wrapper .single-hero .results .result:first-of-type {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .hero-wrapper .single-hero .results .result:last-of-type {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+
+.hero-wrapper .single-hero .results .result {
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  padding: 20px;
+  -ms-grid-columns: 2fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr 1fr;
+}
+
+.hero-wrapper .single-hero .results .result:nth-child(even) {
+  background-color: #f6fafd;
+}
+
+.hero-wrapper .single-hero .results .result .domain {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.hero-wrapper .single-hero .results .result .price {
+  font-weight: 600;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  margin-right: 15px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.hero-wrapper .single-hero .results .result .cart-add {
+  padding: 5px 10px;
+  -webkit-transition: background-color 250ms ease-out;
+  transition: background-color 250ms ease-out;
+}
+
+.hero-wrapper .single-hero .results .result .cart-add:hover {
+  background-color: #2d76eb;
+  color: white;
 }
 
 header.sticky {
@@ -48,6 +124,12 @@ form .select .select-styled:after {
   color: #298bf0;
 }
 
+form .select .select-options {
+  background: #2d76eb;
+  margin-right: 30px;
+  z-index: 10;
+}
+
 form button {
   margin-left: 15px;
   background-color: #298bf0 !important;
@@ -57,6 +139,7 @@ form button {
   form {
     -ms-flex-wrap: wrap !important;
         flex-wrap: wrap !important;
+    padding-bottom: 75px;
   }
   form input {
     -ms-flex-negative: 1;
@@ -70,6 +153,10 @@ form button {
         -ms-flex-positive: 1;
             flex-grow: 1;
     margin: 15px 0 60px 0 !important;
+    background-color: white !important;
+    color: #298bf0 !important;
+    font-weight: 600 !important;
+    border-radius: 5px !important;
   }
 }
 
@@ -85,13 +172,14 @@ form button {
 
 #service .service-box-2 {
   margin-top: 100px;
-  -webkit-box-shadow: 0px 0px 0 0px rgba(20, 27, 201, 0.05);
-          box-shadow: 0px 0px 0 0px rgba(20, 27, 201, 0.05);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(20, 27, 201, 0.05);
+          box-shadow: 0px 0px 10px 0px rgba(20, 27, 201, 0.05);
   -webkit-transition: -webkit-box-shadow 300ms ease-out;
   transition: -webkit-box-shadow 300ms ease-out;
   transition: box-shadow 300ms ease-out;
   transition: box-shadow 300ms ease-out, -webkit-box-shadow 300ms ease-out;
   background: white;
+  border-radius: 5px;
 }
 
 #service .service-box-2:hover {
@@ -100,8 +188,15 @@ form button {
           box-shadow: 0px 0px 25px 0px rgba(20, 27, 201, 0.25);
 }
 
-#service .service-box-2.servicev3 h4 {
-  margin-top: -50px;
+#service .service-box-2.servicev3 {
+  margin-top: 0;
+  padding: 15px;
+}
+
+@media screen and (max-width: 740px) {
+  #service .service-box-2.servicev3 {
+    margin-bottom: 30px;
+  }
 }
 
 #service .service-box-2.servicev3 h4,
@@ -111,17 +206,64 @@ form button {
   transition: color 250ms ease-out;
 }
 
+#service .service-icon {
+  -webkit-transform: none;
+          transform: none;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
 #service .service-icon img {
   max-height: 150px;
 }
 
-#mainfeatures.container,
-#whyus.container {
+#service .service-icon i {
+  font-size: 4rem;
+}
+
+#mainfeatures,
+#whyus {
+  background-color: #298bf0;
+}
+
+#mainfeatures section,
+#whyus section {
+  margin-bottom: 120px;
+}
+
+#mainfeatures section:last-of-type,
+#whyus section:last-of-type {
+  margin-bottom: 0px;
+}
+
+#mainfeatures .container,
+#whyus .container {
   padding: 120px 15px;
 }
 
-#mainfeatures.container > p,
-#whyus.container > p {
+#mainfeatures .container p,
+#mainfeatures .container h1,
+#mainfeatures .container h2,
+#mainfeatures .container h3,
+#mainfeatures .container h4,
+#mainfeatures .container h5,
+#mainfeatures .container h6,
+#mainfeatures .container span,
+#mainfeatures .container ul,
+#whyus .container p,
+#whyus .container h1,
+#whyus .container h2,
+#whyus .container h3,
+#whyus .container h4,
+#whyus .container h5,
+#whyus .container h6,
+#whyus .container span,
+#whyus .container ul {
+  color: white;
+}
+
+#mainfeatures .container > p,
+#whyus .container > p {
   margin-bottom: 4rem;
 }
 
@@ -162,7 +304,8 @@ form button {
 #mainfeatures .special-featured-list .single-special-feature .special-icon,
 #whyus .special-featured-list .single-special-feature .special-icon {
   margin-bottom: 30px;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: white;
+  color: black;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -193,12 +336,30 @@ form button {
   font-size: 10pt;
 }
 
+#mainfeatures .blurbs i,
+#whyus .blurbs i {
+  font-size: 13rem;
+}
+
 #pricing {
-  background-image: url("https://enginehosting-html.fruitfulcode.com/wp-content/themes/enginehosting-html/assets/images/line-prefoter.svg");
+  background-image: url("../../Assets/images/bg-prefooter.png");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
-  margin-bottom: -3.3%;
+  position: relative;
+}
+
+#pricing:before {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 600px;
+  background-image: url("../../Assets/images/bg-prefooter-flipped.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
 }
 
 #pricing .package-control {
@@ -222,7 +383,7 @@ form button {
   padding-left: 2px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 740px) {
   #pricing .package-control .discount {
     display: none;
   }

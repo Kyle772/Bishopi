@@ -4,9 +4,8 @@ import SectionTitle from './SectionTitle';
 export class WhyUs extends Component {
     render() {
         return (
-            <section className="hero-bg  section-padding text-white">
-                <div className="container">
-
+            <React.Fragment>
+                <section>
                     <SectionTitle Title="Why choose Bishopi" Titlep="Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
                     <div className="col">
                         <div className="special-featured-list center-icon">
@@ -39,8 +38,8 @@ export class WhyUs extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </React.Fragment>
         )
     }
 }

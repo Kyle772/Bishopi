@@ -1,0 +1,59 @@
+.mini-hero {
+    color: black;
+    .single-hero {
+        min-height: 20vh;
+        @media screen and (max-width: 740px) {
+            min-height: 250px;
+        }
+    }
+}
+
+.logoSpread {
+    max-width: 500px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    img {
+        max-height: 40px;
+        max-width: 70px;
+        margin: auto;
+        &.net {
+            padding-bottom: 9%;
+        }
+        &.org {
+            padding-top: 6%;
+        }
+    }
+}
+
+#mainfeatures {
+    background-color: transparent;
+    color: rgb(33, 37, 41) !important;
+    .container {
+        padding-top: 60px;
+        p {
+            color: rgb(33, 37, 41);
+        }
+        span {
+            color: rgb(33, 37, 41);
+        }
+    }
+}
+
+#simplified {
+    padding-bottom: 20vh;
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .price {
+        font-size: 5rem;
+        margin-top: -2rem;
+    }
+    p {
+        max-width: 600px;
+        color: rgb(33, 37, 41);
+    }
+}

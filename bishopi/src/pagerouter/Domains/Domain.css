@@ -1,1 +1,84 @@
-/* No CSS *//*# sourceMappingURL=Domain.css.map */
+.mini-hero {
+  color: black;
+}
+
+.mini-hero .single-hero {
+  min-height: 20vh;
+}
+
+@media screen and (max-width: 740px) {
+  .mini-hero .single-hero {
+    min-height: 250px;
+  }
+}
+
+.logoSpread {
+  max-width: 500px;
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+  -ms-grid-columns: (minmax(0, 1fr))[4];
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.logoSpread img {
+  max-height: 40px;
+  max-width: 70px;
+  margin: auto;
+}
+
+.logoSpread img.net {
+  padding-bottom: 9%;
+}
+
+.logoSpread img.org {
+  padding-top: 6%;
+}
+
+#mainfeatures {
+  background-color: transparent;
+  color: #212529 !important;
+}
+
+#mainfeatures .container {
+  padding-top: 60px;
+}
+
+#mainfeatures .container p {
+  color: #212529;
+}
+
+#mainfeatures .container span {
+  color: #212529;
+}
+
+#simplified {
+  padding-bottom: 20vh;
+}
+
+#simplified .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#simplified .price {
+  font-size: 5rem;
+  margin-top: -2rem;
+}
+
+#simplified p {
+  max-width: 600px;
+  color: #212529;
+}
+/*# sourceMappingURL=Domain.css.map */

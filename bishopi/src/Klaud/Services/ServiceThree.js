@@ -20,7 +20,7 @@ class ServiceThree extends Component {
                                 <div className="col-lg-4 col-md-6 col-12" key={item.id} >
                                     <div className="service-box-2 servicev3">
                                         <div className="service-icon">
-                                            <img src={require (`../../Assets/images/services/${item.imgUrl}`)} alt="klaud" />
+                                            <i class={item.faIcon} alt="klaud"></i>
                                         </div>
                                         <h4>{item.title}</h4>
                                         <p>{item.text}</p>

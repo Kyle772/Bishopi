@@ -7,12 +7,10 @@ class PriceThree extends Component {
         var bg2 = require('../../Assets/images/pricing/1.png');
         var bg3 = require('../../Assets/images/pricing/1.png');
 
-        return (
-            <section className="package-items-wrap section-padding pt-0 mbm-20" id="price">
-                <div className="container">
-                    <SectionTitle Title="Pricing Plan" Titlep="Choose the plan that's right for your growing team!" />
-                    <div className="row">
-                        <div className="col-12 col-lg-12">
+        return (<React.Fragment>
+            <SectionTitle Title="Pricing Plan" Titlep="Choose the plan that's right for your growing team!" /> <
+            div className = "row" >
+            <div className="col-12 col-lg-12">
                             <div class="col-12 col-lg-12 text-center">
                                 <div class="package-control mb40">
                                     <ul class="nav nav-pills">
@@ -169,11 +167,8 @@ class PriceThree extends Component {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+                        </div> </div>
+            </React.Fragment>
 
         )
     }

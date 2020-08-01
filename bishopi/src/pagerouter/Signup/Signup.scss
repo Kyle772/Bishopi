@@ -1,0 +1,25 @@
+#SignupForm {
+    .container {
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 600px;
+            .col {
+                display: flex;
+                flex-direction: column;
+                padding: 30px;
+                box-sizing: border-box;
+                &:first-of-type {
+                    padding-left: 0;
+                }
+                &:last-of-type {
+                    padding-right: 0;
+                }
+                button {
+                    margin-top: auto;
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
