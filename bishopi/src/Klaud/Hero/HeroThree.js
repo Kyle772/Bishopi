@@ -10,7 +10,7 @@ export class HeroThree extends Component {
             searchResultTarget = "searchResults";
         }
         if (Achievement1) {
-            AchievementBlock = <div className="achievement-list text-center text-xl-left d-none d-sm-block">
+            AchievementBlock = <div className="achievement-list text-center text-md-left d-none d-sm-block">
                 <ul>
                     <li><span><i className="far fa-check-circle" /></span>{Achievement1}</li>
                     <li><span><i className="far fa-check-circle" /></span>{Achievement2}</li>
@@ -25,14 +25,14 @@ export class HeroThree extends Component {
                         <div className="container hero-bg">
                             <div className="row align-items-center">
                                 {BigTitle ? <div className="col">
-                                    <div className="hero-contents text-white text-center text-xl-left mb-40">
+                                    <div className="hero-contents text-white text-center text-md-left mb-40">
                                         <h2>{BigTitle}</h2>
                                         <p>{SubTitle}</p>
                                     </div>
                                     {AchievementBlock ? AchievementBlock : ""}
                                 </div> : ""}
                                 <div className="col">
-                                    <div className="hero-v3-img pl-20 pr-20">
+                                    <div className="hero-v3-img">
                                         <div className="fullwidth">
                                             <SearchBar inlineResults={this.props.inlineResults} resultTarget={this.props.searchResultTarget} />
                                         </div>

@@ -1,8 +1,49 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import superplaceholder from 'superplaceholder';
+import JSONTree from 'react-json-tree';
+import './SearchBar.scss';
+
+let data = {
+    "domain": {
+        "url": "www.google.com",
+        "owner": "John Adams",
+        "hostname": "dns.google",
+        "city": "Mountain View",
+        "Appraised Value": "$10"
+    }
+}
+
+const theme = {
+    scheme: 'monokai',
+    author: 'wimer hazenberg (http://www.monokai.nl)',
+    base00: '#272822',
+    base01: '#383830',
+    base02: '#49483e',
+    base03: '#75715e',
+    base04: '#a59f85',
+    base05: '#f8f8f2',
+    base06: '#f5f4f1',
+    base07: '#f9f8f5',
+    base08: '#f92672',
+    base09: '#fd971f',
+    base0A: '#f4bf75',
+    base0B: '#a6e22e',
+    base0C: '#a1efe4',
+    base0D: '#66d9ef',
+    base0E: '#ae81ff',
+    base0F: '#cc6633'
+};
+
+
 
 class SearchBar extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            expanded: true
+        };
+    }
 
     componentDidMount() {
         var placehoder = document.querySelector('.search-box-inner input');
@@ -75,7 +116,7 @@ class SearchBar extends Component {
             <div className="domain-search-box">
                 <div className="search-box-inner">
                     <form action="#">
-                        <input type="text" placeholder="Find your new domain name" />
+                        <input type="text" placeholder="Check a domain" />
                         <span>
                             <select className="domain-list select_design">
                                 <option value={1}>.com</option>
@@ -85,21 +126,21 @@ class SearchBar extends Component {
                         </span>
                         <button type="submit">Search</button>
                     </form>
-                    { this.props.inlineResults ? <div id="searchResults" className="results">
-                        <div className="result">
-                            <span className="domain">www.Google.com</span>
-                            <span className="price">10.99</span>
-                            <button className="cart-add">Add to Cart</button>
-                        </div>
+
+                    <div class="results">
                         <div class="result">
-                            <span className="domain">www.GoogleAlternative.com</span><span className="price">10.99</span>
-                            <button className="cart-add">Add to Cart</button>
+                        {data ? <Tree expand={this.state.expanded}/> : "" }
+
                         </div>
-                    </div> : "" }
+                    </div>
                 </div>
             </div>
         )
     }
 }
+
+const Tree = props => {
+    return <JSONTree labelRenderer={([key]) => <React.Fragment><i className="fad fa-quote-left"></i><strong>{key}</strong></React.Fragment>} invertTheme={true} hideRoot={true} theme={theme} data={data.domain} shouldExpandNode={() => props.expand} />;
+};
 
 export default SearchBar

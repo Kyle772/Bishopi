@@ -19,7 +19,7 @@ class DomainPage extends React.Component {
 
   render() {
     return <React.Fragment>
-      <header class="mini-hero">
+      <div class="mini-hero">
         <Hero BigTitle=""
           SubTitle=""
           Achievement1=""
@@ -27,7 +27,7 @@ class DomainPage extends React.Component {
           imgUrl=""
           inlineResults={false}
         />
-      </header>
+      </div>
       <section>
         <SectionTitle Title="Registration &amp; Backorder pricing" />
         <div className="logoSpread">

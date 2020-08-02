@@ -20,7 +20,7 @@ class HomePage extends React.Component {
 
     render() {
         return <React.Fragment>
-            <Hero BigTitle="Find Your Perfect Name Today. Klaud Makes It Fast & Easy."
+            <Hero BigTitle="Domain appraisal made easy"
                 SubTitle="Up to 50% Off Domain and Hosting, Starting from $ 2.50/Month. Free SSL Certificate, Money Back Gurantee."
                 Achievement1=""
                 Achievement2=""
