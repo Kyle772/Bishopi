@@ -18,8 +18,7 @@ class Header extends React.Component {
         super(props);
         this.state = {};
     }
-
-    comment() {}
+    
 
     componentDidMount() {
         $(window).scroll(function () {
@@ -30,6 +29,10 @@ class Header extends React.Component {
                 $("header").removeClass("sticky");
             }
         });
+        $("header a").on("click", function () {
+            $(".navbar-toggler").click();
+        })
+        
     }
 
     render() {
