@@ -27,14 +27,19 @@ class HomePage extends React.Component {
                 imgUrl=""
                 inlineResults={true}
             />
-            <section id="service" className="container">
-                <Services ServiceData={ServiceData} />
+            <section id="service">
+                <div className="container">
+                    <SectionTitle HideSpan={true} Title="The latest hosting server technology"  Titlep="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since" />
+                    <Services ServiceData={ServiceData} />
+                </div>
             </section>
             <section id="standalone-title">
-                <SectionTitle Title="Access exclusive features with a free account" 
-                Titlep="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio fugiat maiores!"/>
-                <a href="#" class="theme-btn ml-auto mr-auto">Create a FREE account</a>
-                <p className="text-center">No credit card required</p>
+                <div className="container">
+                    <SectionTitle Title="Access exclusive features with a free account" 
+                    Titlep="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio fugiat maiores!"/>
+                    <a href="#" class="theme-btn ml-auto mr-auto">Create a FREE account</a>
+                    <p className="text-center">No credit card required</p>
+                </div>
             </section>
             <section id="mainfeatures" class="blue">
                 <div className="container">

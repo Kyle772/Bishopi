@@ -278,7 +278,7 @@ header .container .ctaCon {
 #standalone-title {
   background-color: #2d76eb;
   color: white;
-  padding: 120px 0;
+  padding: 120px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -436,5 +436,15 @@ section .container {
   max-width: 1200px;
   width: 100%;
   margin: auto;
+}
+
+section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=app.css.map */

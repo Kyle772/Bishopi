@@ -207,10 +207,9 @@ header .container {
 }
 
 #standalone-title {
-    //background: linear-gradient(73deg, rgba(74, 74, 142, 1) 0%, rgba(82, 82, 195, 1) 100%);
     background-color: #2d76eb;
     color: white;
-    padding: 120px 0;
+    padding: 120px 30px;
     display: flex;
     flex-direction: column;
     .theme-btn {
@@ -331,4 +330,9 @@ section .container {
     max-width: 1200px;
     width: 100%;
     margin: auto;
+}
+
+section .container {
+    display: flex;
+    flex-direction: column;
 }

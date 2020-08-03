@@ -9,12 +9,12 @@ class SectionTitle extends Component {
     }
 
     render() {
-        var { Title, Titlep, ButtonText, ButtonLink } = this.props;
+        var { Title, Titlep, ButtonText, ButtonLink, HideSpan } = this.props;
         return (
             <div className="section-title-container row">
                 <div className="col-lg-8 col-md-10 col-12">
                     <div className="section-title text-center">
-                        { !this.props.hideSpan ? <span /> : "" }
+                        { !HideSpan ? <span /> : "" }
                         <h2>{Title}</h2>
                         <p>{Titlep}</p>
                         { ButtonText && ButtonLink ? <PageLink exact to={ButtonLink} className="theme-btn">{ButtonText}</PageLink> : ""}

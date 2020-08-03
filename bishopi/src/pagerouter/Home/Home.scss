@@ -90,6 +90,7 @@ header.sticky+section {
 #service {
     background: none;
     color: inherit !important;
+    padding: 120px 30px;
     &.service-three .section-title h2,
     &.service-three .section-title p {
         color: inherit !important;
@@ -151,7 +152,7 @@ header.sticky+section {
         }
     }
     .container {
-        padding: 120px 30px;
+        padding: 120px 30px !important;
         p,
         h1,
         h2,
@@ -207,8 +208,7 @@ header.sticky+section {
     }
     .blurbs i {
         font-size: 13rem;
-        margin-bottom: 10vh;
-        margin-top: 15px;
+        margin: 5vh;
     }
 }
 

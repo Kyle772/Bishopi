@@ -7,33 +7,28 @@ class ServiceThree extends Component {
         var ServiceData = this.props.ServiceData;
 
         return (
-            <section className="services-wrap service-three section-padding" id="service">
-                <div className="container">
-
-                    <SectionTitle Title="The latest hosting server technology"  Titlep="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since" />
-
-                    <div className="row">
+            <React.Fragment>
+                <div className="row">
                     {
-                        ServiceData.serviceBoxItem.map( (item, index) =>  {
-                            return(
-                                index < 6 ? 
-                                <div className="col-lg-4 col-md-6 col-12" key={item.id} >
-                                    <div className="service-box-2 servicev3">
-                                        <div className="service-icon">
-                                            <i class={item.faIcon} alt="klaud"></i>
+                        ServiceData.serviceBoxItem.map((item, index) => {
+                            return (
+                                index < 6 ?
+                                    <div className="col-lg-4 col-md-6 col-12" key={item.id} >
+                                        <div className="service-box-2 servicev3">
+                                            <div className="service-icon">
+                                                <i class={item.faIcon} alt="klaud"></i>
+                                            </div>
+                                            <h4>{item.title}</h4>
+                                            <p>{item.text}</p>
                                         </div>
-                                        <h4>{item.title}</h4>
-                                        <p>{item.text}</p>
                                     </div>
-                                </div>
-                                :
-                                ''
-                            )                            
+                                    :
+                                    ''
+                            )
                         })
                     }
-                    </div>
                 </div>
-            </section>
+            </React.Fragment>
         )
     }
 }
