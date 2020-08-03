@@ -40,6 +40,9 @@ function App() {
             <Route exact path="/domains">
               <Domains />
             </Route>
+            <Route exact path="/pricing">
+              <Pricing/>
+            </Route>
             <Route exact path="/support">
               <Support/>
             </Route>

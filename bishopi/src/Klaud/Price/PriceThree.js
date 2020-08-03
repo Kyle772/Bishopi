@@ -8,7 +8,7 @@ class PriceThree extends Component {
         var bg3 = require('../../Assets/images/pricing/1.png');
 
         return (<React.Fragment>
-            <SectionTitle Title="Pricing Plan" Titlep="Choose the plan that's right for your growing team!" /> <
+            <SectionTitle HideSpan={true} Title="Pricing Plan" Titlep="Choose the plan that's right for your growing team!" /> <
             div className = "row" >
             <div className="col-12 col-lg-12">
                             <div class="col-12 col-lg-12 text-center">
