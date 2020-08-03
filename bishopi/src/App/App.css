@@ -8,6 +8,10 @@ body {
   --fa-secondary-color: #1f7fe2;
 }
 
+#root > div > .section-title-container {
+  margin: 10vh;
+}
+
 .fa-invert {
   --fa-primary-color: #d5deec;
   --fa-secondary-color: #c8d4e0;
@@ -249,6 +253,10 @@ header .container .navbar .navbar-toggler {
   background-color: white;
 }
 
+header .container .navbar .navbar-toggler:focus {
+  outline: none;
+}
+
 header .container .buttonCon,
 header .container .ctaCon {
   display: -webkit-box;
@@ -418,7 +426,6 @@ footer .copyright-info span {
 .row {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: unset !important;
 }
 
 header .container,

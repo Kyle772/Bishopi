@@ -1,15 +1,23 @@
 import React, { Component } from 'react'
+import { Link as PageLink } from 'react-router-dom';
+import './SectionTitle.scss';
 
 class SectionTitle extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {};
+    }
+
     render() {
-        var { Title, Titlep } = this.props;
+        var { Title, Titlep, ButtonText, ButtonLink } = this.props;
         return (
-            <div className="row">
-                <div className="col-lg-8 col-md-10 col-12 offset-lg-2 offset-md-1">
+            <div className="section-title-container row">
+                <div className="col-lg-8 col-md-10 col-12">
                     <div className="section-title text-center">
-                        <span />
+                        { !this.props.hideSpan ? <span /> : "" }
                         <h2>{Title}</h2>
                         <p>{Titlep}</p>
+                        { ButtonText && ButtonLink ? <PageLink exact to={ButtonLink} className="theme-btn">{ButtonText}</PageLink> : ""}
                     </div>
                 </div>
             </div>

@@ -31,15 +31,15 @@ class HomePage extends React.Component {
                 <Services ServiceData={ServiceData} />
             </section>
             <section id="standalone-title">
-                <SectionTitle Title="Access exclusive features with a free account" />
-                <p className="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio fugiat maiores!</p>
+                <SectionTitle Title="Access exclusive features with a free account" 
+                Titlep="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio fugiat maiores!"/>
                 <a href="#" class="theme-btn ml-auto mr-auto">Create a FREE account</a>
                 <p className="text-center">No credit card required</p>
             </section>
             <section id="mainfeatures" class="blue">
                 <div className="container">
-                    <SectionTitle Title="Main Features" />
-                    <p className="text-center">Here we can introduce the wide range of features that the site offers for managing domains.</p>
+                    <SectionTitle Title="Main Features" 
+                    Titlep="Here we can introduce the wide range of features that the site offers for managing domains."/>
                     <div className="special-featured-list center-icon">
                         <div className="single-special-feature">
                             <div className="special-icon s4">

@@ -1,0 +1,21 @@
+.section-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: unset;
+    margin: 30px;
+    p {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        opacity: .6;
+    }
+    .theme-btn {
+        margin-top: 1rem;
+    }
+    .section-title {
+        margin-bottom: unset;
+    }
+}
