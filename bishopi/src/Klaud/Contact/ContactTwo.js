@@ -7,7 +7,7 @@ class ContactTwo extends Component {
         return (
             <section className="contact-us-wrap section-padding contact-v3">
 
-                <SectionTitle hideSpan={true} Title="Send us a message"  Titlep="Send us a message and we'll respond within 24 hours." />  
+                <SectionTitle HideSpan={true} Title="Send us a message"  Titlep="Send us a message and we'll respond within 24 hours." />  
 
                     <div className="row" id="contact">
                         <div className="col-sm-12 col-lg-8">
