@@ -251,12 +251,16 @@ header .container {
 
 footer {
     background-color: #1f7fe2;
+    .single-footer-wid ul li a:hover {
+        color: white !important;
+    }
     .footer-logo {
         p {
             //color: rgb(33, 37, 41);
             color: white;
         }
-        a img {
+        a {
+            img {
             margin-left: -10px;
             max-width: 100%;
         }
@@ -287,7 +291,7 @@ footer {
         li a,
         .foo-wid-title h3 {
             //color: rgb(33, 37, 41);
-            color: white;
+            color: white !important;
         }
         h4 {
             text-transform: uppercase;
@@ -321,6 +325,8 @@ footer {
 
 .row {
     box-sizing: border-box;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 
 header .container,

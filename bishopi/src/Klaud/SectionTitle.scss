@@ -5,6 +5,10 @@
     align-items: center;
     margin-bottom: unset;
     margin: 30px;
+    &.row {
+        margin-left: 0;
+        margin-right: 0;
+    }
     p {
         max-width: 800px;
         margin-left: auto;

@@ -15,11 +15,11 @@ class PricingPage extends React.Component {
   
   render () {return <React.Fragment>
     <SectionTitle Title="Simple, flexible pricing" Titlep="Get two months free with annual billing" HideSpan={true}/>
-    <section id="pricing">
-                <div className="container">
-                    <PriceThree />
-                </div>
-            </section>
+    <section id="pricing" className="no-top-bg">
+        <div className="container">
+            <PriceThree />
+        </div>
+    </section>
   </React.Fragment>
     }
 }
