@@ -25,7 +25,12 @@
         "react-scroll": "^1.7.16",
         "react-slick": "^0.25.2",
         "slick-carousel": "^1.8.1",
-        "superplaceholder": "^1.0.0"
+        "superplaceholder": "^1.0.0",
+        "react-dropzone": "^10.2.2",
+        "@stripe/react-stripe-js": "^1.1.2",
+        "@cypress/code-coverage": "^3.7.0",
+        "react-stripe-elements": "^4.0.1",
+        "moment": "^2.24.0"
     },
     "scripts": {
         "start": "react-scripts start",
