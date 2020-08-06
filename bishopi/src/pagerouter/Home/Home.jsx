@@ -37,11 +37,11 @@ class HomePage extends React.Component {
                 <div className="container">
                     <SectionTitle Title="Access exclusive features with a free account" 
                     Titlep="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio fugiat maiores!"/>
-                    <a href="#" class="theme-btn ml-auto mr-auto">Create a FREE account</a>
+                    <a href="#" className="theme-btn ml-auto mr-auto">Create a FREE account</a>
                     <p className="text-center">No credit card required</p>
                 </div>
             </section>
-            <section id="mainfeatures" class="blue">
+            <section id="mainfeatures" className="blue">
                 <div className="container">
                     <SectionTitle Title="Main Features" 
                     Titlep="Here we can introduce the wide range of features that the site offers for managing domains."/>

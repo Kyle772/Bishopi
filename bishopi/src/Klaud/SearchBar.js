@@ -64,8 +64,8 @@ class SearchBar extends Component {
                 numberOfOptions = $(this).children('option').length;
             var overflow = numberOfOptions > 5 ? 'overflow-y' : '';
             $this.addClass('select-hidden');
-            $this.wrap('<div class="select"></div>');
-            $this.after('<div class="select-styled"></div>');
+            $this.wrap('<div className="select"></div>');
+            $this.after('<div className="select-styled"></div>');
 
             var $styledSelect = $this.next('div.select-styled');
             $styledSelect.text($this.children('option').eq(0).text());
@@ -127,8 +127,8 @@ class SearchBar extends Component {
                         <button type="submit">Search</button>
                     </form>
 
-                    <div class="results">
-                        <div class="result">
+                    <div className="results">
+                        <div className="result">
                         {data ? <Tree expand={this.state.expanded}/> : "" }
 
                         </div>

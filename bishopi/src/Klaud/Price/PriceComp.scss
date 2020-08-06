@@ -1,0 +1,165 @@
+#comparePricing {
+    background-color: #298bef;
+    color: white;
+    padding: 120px 0;
+    h2 {
+        color: white;
+    }
+    .comparison {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        background-color: white;
+        border-radius: 5px;
+        overflow-x: auto;
+        .feature-list ul {
+            margin-bottom: 0;
+            li {
+                height: 50px;
+                color: rgb(33, 37, 41);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 30px;
+                box-sizing: border-box;
+                border-bottom: 1px solid rgba(33, 37, 41, .1);
+                .package-btn {
+                    background-image: unset;
+                    background-color: #298bf0;
+                    border-radius: 5px;
+                    color: white;
+                    padding: .5rem 1.75rem;
+                    white-space: nowrap;
+                }
+            }
+        }
+        .top {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: start;
+            height: 150px;
+            padding: 15px 30px;
+            padding-bottom: 30px;
+            border-bottom: solid 1px rgba(0, 0, 0, .1);
+            .nav-pills {
+                margin: 0;
+                margin-top: auto;
+            }
+        }
+    }
+    .card-list {
+        color: rgb(33, 37, 41);
+        #monthComp .row,
+        #yearComp .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            min-width: 600px;
+        }
+        .card {
+            box-sizing: border-box;
+            border-radius: 0;
+            border-left: solid 1px rgba(33, 37, 41, .3);
+            flex-grow: 1;
+            &:last-of-type {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+            .top,
+            .feature-list ul li {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 15px 50px;
+            }
+            .top {
+                background-color: rgba(0, 0, 0, .1);
+                margin-top: -1px;
+                h4,
+                h2,
+                p {
+                    margin: 0;
+                }
+                h2 {
+                    position: relative;
+                    display: inline-flex;
+                    font-weight: 600;
+                    &:before {
+                        content: "$";
+                        font-size: 1rem;
+                        margin-bottom: auto;
+                        margin-top: .5rem;
+                    }
+                }
+            }
+        }
+        h2 {
+            color: rgb(33, 37, 41);
+        }
+        .fa-horizontal-rule {
+            opacity: .25;
+            font-size: .75rem;
+        }
+    }
+}
+
+#pricingFAQ {
+    background-color: #298bef;
+    color: white;
+    padding: 120px 0;
+    h2 {
+        color: white;
+    }
+    #accordion {
+        max-width: 600px;
+        width: 100%;
+        padding: 15px;
+        margin: auto;
+        color: rgb(33, 37, 41);
+        .card {
+            margin-bottom: 5px;
+            border: unset;
+            background-color: #ffffff;
+            border: solid 2px rgba(0, 0, 0, .3);
+            border-radius: 10px;
+            .card-header {
+                background-color: rgba(0, 0, 0, .05);
+                border-bottom: 0px;
+                h5 {
+                    font-weight: 900;
+                }
+            }
+            .card-body {
+                color: rgba(33, 37, 41, .6);
+                padding: 1.5rem;
+            }
+        }
+        button.btn-link {
+            color: black;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            padding: 0;
+            &.collapsed:before {
+                content: "\f055";
+                font-weight: 300;
+            }
+            &:before {
+                display: inline-flex;
+                color: inherit;
+                width: 1rem;
+                font-size: 1rem;
+                content: "\f056";
+                font-weight: 300;
+                opacity: .4;
+                font-size: 2rem;
+                font-family: "Font Awesome 5 Pro";
+                margin-right: 2rem;
+            }
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
