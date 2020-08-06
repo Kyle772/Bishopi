@@ -72,7 +72,7 @@ class DomainPage extends React.Component {
       </section>
       <section id="simplified">
         <div className="container">
-          <SectionTitle Title="Pricing Simplified"
+          <SectionTitle HideSpan={true}  Title="Pricing Simplified"
           Titlep="Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorum, modi nulla eaque natus ab odit. Architecto necessitatibus id expedita, cumque earum facilis nemo dolor sit amet, non deserunt iste."></SectionTitle>
           <span className="price">$99</span>
           <strong>Per backordered* or registered domain name.</strong>

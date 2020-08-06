@@ -117,19 +117,12 @@ class SearchBar extends Component {
                 <div className="search-box-inner">
                     <form action="#">
                         <input type="text" placeholder="Check a domain" />
-                        <span>
-                            <select className="domain-list select_design">
-                                <option value={1}>.com</option>
-                                <option value={2}>.net</option>
-                                <option value={3}>.org</option>
-                            </select>
-                        </span>
                         <button type="submit">Search</button>
                     </form>
 
                     <div className="results">
                         <div className="result">
-                        {data ? <Tree expand={this.state.expanded}/> : "" }
+                            {data ? <Tree expand={this.state.expanded} /> : ""}
 
                         </div>
                     </div>

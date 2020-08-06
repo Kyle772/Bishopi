@@ -16,6 +16,11 @@
   margin: 30px;
 }
 
+.section-title-container.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .section-title-container p {
   max-width: 800px;
   margin-left: auto;

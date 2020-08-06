@@ -38,6 +38,10 @@
                 padding: 10px 20px;
                 color: white;
                 margin-left: auto;
+                background-color: #298bf0;
+                &:hover {
+                    opacity: .8;
+                }
             }
         }
         h2 {

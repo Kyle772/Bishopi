@@ -1,34 +1,62 @@
 #SignupForm .container form {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: (minmax(0, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
   max-width: 600px;
 }
 
+@media screen and (max-width: 600px) {
+  #SignupForm .container form {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 #SignupForm .container form .col {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (minmax(0, 1fr))[5];
+      grid-template-rows: repeat(5, minmax(0, 1fr));
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-#SignupForm .container form .col:first-of-type {
-  padding-left: 0;
-}
-
-#SignupForm .container form .col:last-of-type {
-  padding-right: 0;
+  height: 400px;
 }
 
 #SignupForm .container form .col button {
   margin-top: auto;
   margin-left: auto;
+  background-color: #298bf0;
+}
+
+#SignupForm .container form .col button:hover {
+  opacity: .8;
+}
+
+#SignupForm .container form .col .select {
+  width: 100%;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.25);
+}
+
+#SignupForm .container form .col .select .select-options {
+  background: #298bf0;
+  overflow-y: auto;
+  max-height: 30vh;
+}
+
+#SignupForm .container form .col .select .select-styled {
+  color: rgba(0, 0, 0, 0.35);
+  font-weight: 500;
+}
+
+#SignupForm .container form .col .select .select-styled:after {
+  width: unset;
+  color: inherit;
 }
 /*# sourceMappingURL=Signup.css.map */

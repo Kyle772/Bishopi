@@ -110,7 +110,7 @@ class Header extends React.Component {
                                 <li className="nav-item">
                                     <PageLink to="/support" className="button">Support</PageLink>
                                 </li>
-                                <li className="button cta">
+                                <li className="nav-item button cta">
                                     <PageLink to="/login" className="button">Login</PageLink>
                                     <PageLink to="/signup" className="button">Sign up</PageLink>
                                 </li>

@@ -133,6 +133,9 @@ header .container {
                     background-color: rgba(0, 0, 0, .05);
                     font-weight: 600;
                 }
+                &.button {
+                    padding: 0;
+                }
             }
             li.button.cta {
                 display: grid;
@@ -261,14 +264,15 @@ footer {
         }
         a {
             img {
-            margin-left: -10px;
-            max-width: 100%;
+                margin-left: -10px;
+                max-width: 100%;
+            }
         }
-    }
-    .footer-bottom .container {
-        grid-template-columns: 1fr 1fr;
-        div .payment-support {
-            margin-left: auto;
+        .footer-bottom .container {
+            grid-template-columns: 1fr 1fr;
+            div .payment-support {
+                margin-left: auto;
+            }
         }
     }
     .container {
