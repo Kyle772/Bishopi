@@ -3,7 +3,9 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+        "@cypress/code-coverage": "^3.7.0",
         "@fortawesome/react-fontawesome": "^0.1.8",
+        "@stripe/react-stripe-js": "^1.1.2",
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.3.2",
         "@testing-library/user-event": "^7.1.2",
@@ -13,10 +15,12 @@
         "gsap": "^3.0.5",
         "jquery": "^3.4.1",
         "modernizr": "^3.8.0",
+        "moment": "^2.24.0",
         "popper.js": "^1.16.1",
         "react": "^16.12.0",
         "react-bootstrap": "^1.0.0-beta.16",
         "react-dom": "^16.12.0",
+        "react-dropzone": "^10.2.2",
         "react-easing": "^0.4.1",
         "react-json-tree": "^0.12.0",
         "react-reveal": "^1.2.2",
@@ -24,13 +28,9 @@
         "react-scripts": "^3.4.0",
         "react-scroll": "^1.7.16",
         "react-slick": "^0.25.2",
-        "slick-carousel": "^1.8.1",
-        "superplaceholder": "^1.0.0",
-        "react-dropzone": "^10.2.2",
-        "@stripe/react-stripe-js": "^1.1.2",
-        "@cypress/code-coverage": "^3.7.0",
         "react-stripe-elements": "^4.0.1",
-        "moment": "^2.24.0"
+        "slick-carousel": "^1.8.1",
+        "superplaceholder": "^1.0.0"
     },
     "scripts": {
         "start": "react-scripts start",
