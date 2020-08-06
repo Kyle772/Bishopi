@@ -101,7 +101,7 @@ ENV/
 
 
 #Packages
-templates/Klaud/klaud/node_modules
+templates/klaud/node_modules
 
 
 # dependencies
