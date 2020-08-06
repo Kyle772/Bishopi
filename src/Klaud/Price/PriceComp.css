@@ -63,7 +63,7 @@
           align-items: flex-start;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start;
+          justify-content: flex-start;
   height: 150px;
   padding: 15px 30px;
   padding-bottom: 30px;

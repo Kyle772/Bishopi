@@ -268,11 +268,11 @@ footer {
                 max-width: 100%;
             }
         }
-        .footer-bottom .container {
-            grid-template-columns: 1fr 1fr;
-            div .payment-support {
-                margin-left: auto;
-            }
+    }
+    .footer-bottom .container {
+        grid-template-columns: 1fr 1fr;
+        div .payment-support {
+            margin-left: auto;
         }
     }
     .container {
@@ -345,4 +345,7 @@ section .container {
 section .container {
     display: flex;
     flex-direction: column;
+    &.row {
+        flex-direction: row;
+    }
 }

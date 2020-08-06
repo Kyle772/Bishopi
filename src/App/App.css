@@ -348,12 +348,12 @@ footer .footer-logo a img {
   max-width: 100%;
 }
 
-footer .footer-logo .footer-bottom .container {
+footer .footer-bottom .container {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
 }
 
-footer .footer-logo .footer-bottom .container div .payment-support {
+footer .footer-bottom .container div .payment-support {
   margin-left: auto;
 }
 
@@ -456,5 +456,12 @@ section .container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+section .container.row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 /*# sourceMappingURL=App.css.map */
