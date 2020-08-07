@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import SectionTitle from '../SectionTitle';
-import './Contact.scss';
+
 
 class ContactTwo extends Component {
     render() {
         return (
-            <section className="contact-us-wrap section-padding contact-v3">
+            <section className="contact-us-wrap contact-v3">
 
                 <SectionTitle HideSpan={true} Title="Send us a message"  Titlep="Send us a message and we'll respond within 24 hours." />  
 

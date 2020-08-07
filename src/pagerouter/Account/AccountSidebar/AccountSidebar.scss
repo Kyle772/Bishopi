@@ -1,0 +1,19 @@
+.account-sidebar {
+    border-radius: 5px;
+    padding: 15px;
+    ul {
+        background-color: white;
+        padding: 10px;
+        margin: -15px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        @media screen and (max-width: 992px) {
+            margin: 0;
+        }
+        &:last-of-type {
+            border-bottom: unset;
+        }
+    }
+    li {
+        margin: 10px;
+    }
+}

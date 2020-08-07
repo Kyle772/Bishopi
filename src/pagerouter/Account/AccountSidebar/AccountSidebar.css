@@ -1,0 +1,26 @@
+.account-sidebar {
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.account-sidebar ul {
+  background-color: white;
+  padding: 10px;
+  margin: -15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (max-width: 992px) {
+  .account-sidebar ul {
+    margin: 0;
+  }
+}
+
+.account-sidebar ul:last-of-type {
+  border-bottom: unset;
+}
+
+.account-sidebar li {
+  margin: 10px;
+}
+/*# sourceMappingURL=AccountSidebar.css.map */

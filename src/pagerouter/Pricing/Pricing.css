@@ -102,4 +102,17 @@
 #pricing .single-package .package-features-price .price span {
   height: 60px;
 }
+
+#pricing .package-control {
+  margin-bottom: 50px;
+}
+
+#pricing .single-package {
+  margin-top: 15px;
+}
+
+#AccountSection .hide-bgs,
+#AccountSection .hide-bgs:before {
+  background-image: unset !important;
+}
 /*# sourceMappingURL=Pricing.css.map */

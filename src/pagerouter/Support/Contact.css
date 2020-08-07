@@ -1,5 +1,5 @@
 #contactContainer {
-  width: 1000px;
+  max-width: 1000px;
 }
 
 #contactContainer .contact-us-wrap.contact-v3 {
@@ -76,9 +76,5 @@
 #contactContainer .contact-us-wrap.contact-v3 #contact.row button:hover {
   opacity: .8;
   background-color: #298bef;
-}
-
-#SupportPage .row {
-  padding: 30px;
 }
 /*# sourceMappingURL=Contact.css.map */

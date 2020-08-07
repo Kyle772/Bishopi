@@ -1,0 +1,84 @@
+#AccountSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .05);
+    padding-bottom: 3rem;
+    .container {
+        margin-top: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+        h3 {
+            margin-top: 3rem;
+            &:first-of-type {
+                margin-top: 0;
+            }
+        }
+        .account-card {
+            padding: 30px;
+            background-color: white;
+            margin-bottom: 15px;
+            padding-left: 3.5rem;
+            border-radius: 5px;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+            .code {
+                background-color: rgba(0, 0, 0, .1);
+                padding: 5px 10px;
+                margin-top: 10px;
+            }
+            i {
+                margin-left: -1.5rem;
+                margin-right: 1rem
+            }
+            #InvoiceDetails {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 30px;
+                grid-row-gap: 18px;
+                grid-template-rows: 1fr 1fr 1fr;
+                margin-bottom: 30px;
+                #country-select {
+                    border-bottom: unset;
+                }
+            }
+        }
+        .overview-section {
+            margin: 15px 30px;
+        }
+        #EditProfile {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 30px;
+            grid-row-gap: 30px;
+        }
+        input {
+            border-bottom: 1px solid rgba(0, 0, 0, .25);
+        }
+        #pricing {
+            .package-control {
+                ul {}
+                .nav-pills {
+                    margin-left: 0;
+                    @media screen and (max-width: 992px) {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+                .discount {
+                    left: 280px;
+                    background-color: white;
+                    transform: translateY(-50%);
+                    &:after {
+                        background-color: white;
+                    }
+                }
+            }
+            .single-package {
+                margin-top: 15px;
+            }
+        }
+    }
+}

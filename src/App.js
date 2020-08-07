@@ -7,9 +7,9 @@ import Domains from './pagerouter/Domains/Domain';
 import Pricing from './pagerouter/Pricing/Pricing';
 import Support from './pagerouter/Support/Support';
 import Account from './pagerouter/Account/AccountBase';
-import './App.css';
 import AOS from 'aos';
 import './Assets/fontawesome-pro-5.14.0-web/css/all.css';
+import './App/App.scss';
 
 import {
     BrowserRouter as Router,
@@ -42,7 +42,7 @@ function App() {
       <Route exact path="/support">
         <Support />
       </Route>
-      <Route exact path="/account">
+      <Route path="/account">
         <Account />
       </Route>
     </Switch>

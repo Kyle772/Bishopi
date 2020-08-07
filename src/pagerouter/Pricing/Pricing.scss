@@ -83,4 +83,17 @@
             }
         }
     }
+    .package-control {
+        margin-bottom: 50px;
+    }
+    .single-package {
+        margin-top: 15px;
+    }
+}
+
+#AccountSection {
+    .hide-bgs,
+    .hide-bgs:before {
+        background-image: unset !important;
+    }
 }

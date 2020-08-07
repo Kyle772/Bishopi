@@ -464,4 +464,21 @@ section .container.row {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+
+section .container button.button {
+  background-color: #2d76eb;
+  padding: 5px 30px;
+  line-height: unset;
+  color: white;
+}
+
+section .container button.button:hover {
+  background-color: #2d76eb;
+  opacity: .8;
+}
+
+section .container button.button a {
+  color: white;
+  line-height: unset;
+}
 /*# sourceMappingURL=App.css.map */

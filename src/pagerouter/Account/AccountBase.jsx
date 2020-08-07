@@ -8,9 +8,14 @@ import {
   withRouter
 } from "react-router-dom";
 import { Link as PageLink } from 'react-router-dom';
-import EditProfile from './EditProfile/EditProfile';
+
 import Overview from './Overview';
-import AccountSidebar from './AccountSidebar';
+import EditProfile from './EditProfile/EditProfile';
+import Subscriptions from './Subscriptions/Subscriptions';
+import Billing from './Billing/Billing';
+
+import AccountSidebar from './AccountSidebar/AccountSidebar';
+import './Account.scss';
 
 class AccountTemplate extends React.Component {
   constructor(props) {
@@ -23,17 +28,25 @@ class AccountTemplate extends React.Component {
   render() {
     return <React.Fragment>
       <Router>
-        <section>
+        <section id="AccountSection">
           <div className="container row">
-          <AccountSidebar/>
-            <Switch>
-              <Route exact path="/account">
-                <Overview />
-              </Route>
-              <Route exact path="/account/profile">
-                <EditProfile />
-              </Route>
-            </Switch>
+            <AccountSidebar/>
+            <div className="col-lg-9 col-md-12">
+              <Switch>
+                <Route exact path="/account">
+                  <Overview />
+                </Route>
+                <Route exact path="/account/profile">
+                  <EditProfile />
+                </Route>
+                <Route exact path="/account/subscriptions">
+                  <Subscriptions />
+                </Route>
+                <Route exact path="/account/billing">
+                  <Billing />
+                </Route>
+              </Switch>
+            </div>
           </div>
         </section>
       </Router>

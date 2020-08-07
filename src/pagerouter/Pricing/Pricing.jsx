@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import { useLocation, withRouter } from 'react-router-dom';
 import PriceThree from '../../Klaud/Price/PriceThree.js';
 import PriceComp from '../../Klaud/Price/PriceComp';
-import './Pricing.scss';import $ from 'jquery';
+import './Pricing.scss';
+import $ from 'jquery';
 import SectionTitle from '../../Klaud/SectionTitle.js';
 
 

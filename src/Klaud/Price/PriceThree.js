@@ -3,11 +3,12 @@ import SectionTitle from '../SectionTitle'
 
 class PriceThree extends Component {
     render() {
-        let { Title, Titlep } = this.props;
+        let { Title, Titlep, ButtonText, HideSectionTitle } = this.props;
         if (!Title) { Title = "Pricing Plan" }
         if (!Titlep) { Titlep = "Choose the plan that's right for your growing team!" }
+        if (!ButtonText) { ButtonText = "Get Started" }
         return (<React.Fragment>
-            <SectionTitle HideSpan={true} Title={Title} Titlep={Titlep} />
+            {  HideSectionTitle ? "" : <SectionTitle HideSpan={true} Title={Title} Titlep={Titlep} /> }
             <div className="row" >
                 <div className="col-12 col-lg-12">
                     <div className="col-12 col-lg-12 text-center">
@@ -27,7 +28,7 @@ class PriceThree extends Component {
                     <div className="tab-content">
                         <div id="month" className="tab-pane in active">
                             <div className="row">
-                                <div className="col-xl-4 col-md-4 col-sm-12 col-12">
+                                <div className="col-xl-4 col-md-6 col-sm-12 col-12">
                                     <div className="single-package" data-aos="fade-up" data-aos-duration={1000}>
                                         <div className="package-shape" />
                                         <div className="package-name text-center">
@@ -45,11 +46,11 @@ class PriceThree extends Component {
                                             </div>
                                         </div>
                                         <div className="package-btn">
-                                            <a href=".#">Get Started</a>
+                                            <a href=".#">{ ButtonText }</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-xl-4 col-md-4 col-sm-12 col-12">
+                                <div className="col-xl-4 col-md-6 col-sm-12 col-12">
                                     <div className="single-package active">
                                         <div className="package-shape" />
                                         <div className="package-name text-center">
@@ -67,11 +68,11 @@ class PriceThree extends Component {
                                             </div>
                                         </div>
                                         <div className="package-btn">
-                                            <a href=".#">Get Started</a>
+                                            <a href=".#">{ ButtonText }</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-xl-4 col-md-4 col-sm-12 col-12">
+                                <div className="col-xl-4 col-md-6 col-sm-12 col-12">
                                     <div className="single-package" data-aos="fade-up" data-aos-duration={1000}>
                                         <div className="package-shape" />
                                         <div className="package-name text-center">
@@ -89,7 +90,7 @@ class PriceThree extends Component {
                                             </div>
                                         </div>
                                         <div className="package-btn price-btn3">
-                                            <a href=".#">Get Started</a>
+                                            <a href=".#">{ ButtonText }</a>
                                         </div>
                                     </div>
                                 </div>
@@ -115,7 +116,7 @@ class PriceThree extends Component {
                                             </div>
                                         </div>
                                         <div className="package-btn">
-                                            <a href=".#">Get Started</a>
+                                            <a href=".#">{ ButtonText }</a>
                                         </div>
                                     </div>
                                 </div>
@@ -137,7 +138,7 @@ class PriceThree extends Component {
                                             </div>
                                         </div>
                                         <div className="package-btn">
-                                            <a href=".#">Get Started</a>
+                                            <a href=".#">{ ButtonText }</a>
                                         </div>
                                     </div>
                                 </div>
@@ -159,7 +160,7 @@ class PriceThree extends Component {
                                             </div>
                                         </div>
                                         <div className="package-btn price-btn3">
-                                            <a href=".#">Get Started</a>
+                                            <a href=".#">{ ButtonText }</a>
                                         </div>
                                     </div>
                                 </div>

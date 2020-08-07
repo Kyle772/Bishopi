@@ -1,1 +1,114 @@
-/* No CSS *//*# sourceMappingURL=Account.css.map */
+#AccountSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding-bottom: 3rem;
+}
+
+#AccountSection .container {
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#AccountSection .container h3 {
+  margin-top: 3rem;
+}
+
+#AccountSection .container h3:first-of-type {
+  margin-top: 0;
+}
+
+#AccountSection .container .account-card {
+  padding: 30px;
+  background-color: white;
+  margin-bottom: 15px;
+  padding-left: 3.5rem;
+  border-radius: 5px;
+}
+
+#AccountSection .container .account-card:last-of-type {
+  margin-bottom: 0;
+}
+
+#AccountSection .container .account-card .code {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+#AccountSection .container .account-card i {
+  margin-left: -1.5rem;
+  margin-right: 1rem;
+}
+
+#AccountSection .container .account-card #InvoiceDetails {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 18px;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  margin-bottom: 30px;
+}
+
+#AccountSection .container .account-card #InvoiceDetails #country-select {
+  border-bottom: unset;
+}
+
+#AccountSection .container .overview-section {
+  margin: 15px 30px;
+}
+
+#AccountSection .container #EditProfile {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+#AccountSection .container input {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+#AccountSection .container #pricing .package-control .nav-pills {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 992px) {
+  #AccountSection .container #pricing .package-control .nav-pills {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+#AccountSection .container #pricing .package-control .discount {
+  left: 280px;
+  background-color: white;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#AccountSection .container #pricing .package-control .discount:after {
+  background-color: white;
+}
+
+#AccountSection .container #pricing .single-package {
+  margin-top: 15px;
+}
+/*# sourceMappingURL=Account.css.map */

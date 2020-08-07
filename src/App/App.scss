@@ -348,4 +348,18 @@ section .container {
     &.row {
         flex-direction: row;
     }
+    button.button {
+        background-color: #2d76eb;
+        padding: 5px 30px;
+        line-height: unset;
+        color: white;
+        &:hover {
+            background-color: #2d76eb;
+            opacity: .8;
+        }
+        a {
+            color: white;
+            line-height: unset;
+        }
+    }
 }

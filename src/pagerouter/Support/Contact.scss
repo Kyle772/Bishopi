@@ -1,5 +1,5 @@
 #contactContainer {
-    width: 1000px;
+    max-width: 1000px;
     .contact-us-wrap.contact-v3 {
         background-image: unset;
         background-color: rgba(0, 0, 0, .05);
@@ -40,10 +40,4 @@
         }
     }
     form {}
-}
-
-#SupportPage {
-    .row {
-        padding: 30px;
-    }
 }

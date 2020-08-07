@@ -17,7 +17,7 @@ class SectionTitle extends Component {
                         { !HideSpan ? <span /> : "" }
                         <h2>{Title}</h2>
                         <p>{Titlep}</p>
-                        { ButtonText && ButtonLink ? <PageLink exact to={ButtonLink} className="theme-btn">{ButtonText}</PageLink> : ""}
+                        { ButtonText && ButtonLink ? <button className="button"><PageLink exact to={ButtonLink}>{ButtonText}</PageLink></button> : ""}
                     </div>
                 </div>
             </div>
