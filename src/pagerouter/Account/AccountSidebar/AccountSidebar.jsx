@@ -25,9 +25,11 @@ class AcccountSidebar extends React.Component {
           <li><PageLink to="/account/profile">Edit Profile</PageLink></li>
           <li><PageLink to="/account/subscriptions">Manage Subscriptions</PageLink></li>
           <li><PageLink to="/account/billing">Billing</PageLink></li>
-          <li><PageLink>Invoices</PageLink></li>
-          <li><PageLink>Email Settings</PageLink></li>
-          <li><PageLink>API Usage</PageLink></li>
+          <li><PageLink to="/account/invoices">Invoices</PageLink></li>
+          <li><PageLink to="/account/email">Email Settings</PageLink></li>
+          <li><PageLink to="/account/apiusage">API Usage</PageLink></li>
+          <li><PageLink to="/account/orders">My Orders</PageLink></li>
+          <li><PageLink to="/account/domains">My Domains</PageLink></li>
         </ul>
         <ul>
           <li><PageLink To="/logout">Logout</PageLink></li>

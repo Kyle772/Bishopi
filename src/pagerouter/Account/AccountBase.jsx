@@ -13,6 +13,7 @@ import Overview from './Overview';
 import EditProfile from './EditProfile/EditProfile';
 import Subscriptions from './Subscriptions/Subscriptions';
 import Billing from './Billing/Billing';
+import Invoices from './Invoices/Invoices';
 
 import AccountSidebar from './AccountSidebar/AccountSidebar';
 import './Account.scss';
@@ -44,6 +45,9 @@ class AccountTemplate extends React.Component {
                 </Route>
                 <Route exact path="/account/billing">
                   <Billing />
+                </Route>
+                <Route exact path="/account/invoices">
+                  <Invoices />
                 </Route>
               </Switch>
             </div>

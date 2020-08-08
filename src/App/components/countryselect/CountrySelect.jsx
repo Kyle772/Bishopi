@@ -30,7 +30,7 @@ export default function CountrySelect() {
   return (
     <Autocomplete
       id="country-select"
-      style={{ width: 300 }}
+      style={{ width: '100%' }}
       options={countries}
       classes={{
         option: classes.option,

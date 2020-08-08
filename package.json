@@ -13,6 +13,8 @@
         "@testing-library/user-event": "^7.1.2",
         "aos": "^3.0.0-beta.6",
         "bootstrap": "^4.4.1",
+        "datatables.net-bs4": "^1.10.21",
+        "datatables.net-responsive-bs4": "^2.2.5",
         "google-map-react": "^1.1.5",
         "gsap": "^3.0.5",
         "jquery": "^3.4.1",
@@ -30,7 +32,9 @@
         "react-scripts": "^3.4.0",
         "react-scroll": "^1.7.16",
         "react-slick": "^0.25.2",
+        "react-sortable-hoc": "^1.11.0",
         "react-stripe-elements": "^4.0.1",
+        "react-virtualized": "^9.21.2",
         "slick-carousel": "^1.8.1",
         "superplaceholder": "^1.0.0"
     },

@@ -34,7 +34,6 @@
   padding: 30px;
   background-color: white;
   margin-bottom: 15px;
-  padding-left: 3.5rem;
   border-radius: 5px;
 }
 
@@ -49,6 +48,7 @@
 }
 
 #AccountSection .container .account-card i {
+  padding-left: 1.5rem;
   margin-left: -1.5rem;
   margin-right: 1rem;
 }
@@ -63,6 +63,13 @@
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  #AccountSection .container .account-card #InvoiceDetails {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 #AccountSection .container .account-card #InvoiceDetails #country-select {

@@ -19,7 +19,6 @@
             padding: 30px;
             background-color: white;
             margin-bottom: 15px;
-            padding-left: 3.5rem;
             border-radius: 5px;
             &:last-of-type {
                 margin-bottom: 0;
@@ -30,6 +29,7 @@
                 margin-top: 10px;
             }
             i {
+                padding-left: 1.5rem;
                 margin-left: -1.5rem;
                 margin-right: 1rem
             }
@@ -40,6 +40,9 @@
                 grid-row-gap: 18px;
                 grid-template-rows: 1fr 1fr 1fr;
                 margin-bottom: 30px;
+                @media screen and (max-width: 600px) {
+                    grid-template-columns: 1fr;
+                }
                 #country-select {
                     border-bottom: unset;
                 }
